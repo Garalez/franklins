@@ -1,0 +1,218 @@
+@font-face {
+  font-family: Bicubik;
+  src: url('./fonts/bicubik/bicubik.woff') format('woff'),
+    url('./fonts/bicubik/bicubik.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url('./fonts/geologica/Geologica-thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Wadik;
+  src: url('./fonts/wadik/Wadik.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 15px 26px 0 26px;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.header {
+  padding: 27px 0 62px 0;
+  background: url('./img/headerBackGround.jfif') no-repeat center center;
+  border-radius: 22.27px;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 0 107px 0 110px;
+}
+
+.header__logo {
+  width: 85px;
+  padding-top: 7.5px;
+}
+
+.header__locale {
+  width: 51px;
+  height: 25px;
+  padding-left: 7px;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #5d29f1;
+  font-family: Bicubik, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.header__locale::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid white;
+  margin-left: 4px;
+}
+
+.head__heading {
+  font-family: Bicubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.head__heading_warnings-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.head__warnings_exclamation {
+  width: 25px;
+  height: 28px;
+  position: relative;
+  top: -1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 5px,
+    100% calc(100% - 5px),
+    calc(100% - 8px) 100%,
+    0 100%
+  );
+  background-color: white;
+  color: #5d29f1;
+  font-family: Wadik;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.59px;
+  text-align: left;
+}
+
+.head__warnings {
+  width: 491px;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 18px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 75%, 1% 68.5%, 1% 32%, 0 27.7%);
+  background-color: #5d29f1;
+  border-radius: 5px;
+  font-family: Geologica;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: left;
+}
+
+.head__subheading_wrapper {
+  margin-bottom: 78px;
+}
+
+.head__subheading {
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+  text-align: center;
+}
+
+.indentation10 {
+  padding-right: 10px;
+}
+
+.head__subheading_selection {
+  color: #05E9F0;
+}
+
+.header__dialog_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header__dialog_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  width: 611px;
+  padding-left: 5px;
+}
+
+.header__dialog_question {
+  display: flex;
+  gap: 10px;
+}
+
+.header__dialog_question-text {
+  width: 235px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #413CB2;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.7px;
+}
+
+.header__dialog_answer-text {
+  width: 404px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #413CB2;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Wadik;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.7px;
+}
+
+.header__dialog_answer {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+  padding-right: 1px;
+}
