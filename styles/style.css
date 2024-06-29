@@ -1,6 +1,7 @@
 @import url("./header.css");
 @import url("./introduction.css");
 @import url("./terms.css");
+@import url("./questions.css");
 
 @font-face {
   font-family: Bicubik;
@@ -82,4 +83,8 @@ main {
 
 .text-selection {
   color: #05e9f0;
+}
+
+.text-selection-blue {
+  color: #544CF9;
 }

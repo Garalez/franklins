@@ -1,7 +1,8 @@
 .terms {
   background: url('../img/headerBackGround.jfif') no-repeat center center;
   border-radius: 25px;
-  padding-left: 118px;
+  padding: 0 0 59px 113px;
+  margin-bottom: 25px;
   font-family: Geologica;
   font-size: 18px;
   font-weight: 250;
@@ -12,19 +13,17 @@
   padding-top: 70px;
   display: flex;
   align-items: flex-end;
-  gap: 5px;
-}
-
-.terms__dialog-avatar {
+  gap: 10px;
 }
 
 .terms__dialog-content {
-  padding: 25px 48px 25px 35px;
+  padding: 25px 48px 9px 32px;
   border-radius: 19.65px 19px 19.65px 0.85px;
   background-color: #1c195b;
 }
 
 .terms__dialog-heading {
+  padding-left: 3px;
   margin-bottom: 26px;
   font-family: Wadik;
   font-size: 24px;
@@ -34,6 +33,7 @@
 
 .terms__dialog-cards {
   position: relative;
+  padding-left: 3px;
   display: flex;
   gap: 28px;
   margin-bottom: 30px;
@@ -153,9 +153,6 @@
   line-height: 19.91px;
 }
 
-.terms__dialog-cards_requirements-list {
-}
-
 .terms__dialog-cards_requirements-item {
   display: flex;
   gap: 15px;
@@ -220,6 +217,8 @@
 }
 
 .terms__dialog-request {
+  padding-left: 3px;
+  margin-bottom: 22px;
 }
 
 .terms__dialog-request_button-wrapper {
@@ -288,11 +287,66 @@
   line-height: 19.91px;
 }
 
-.terms__dialog-profit-wrapper {
-}
-
-.terms__dialog-profit-list {
-}
-
 .terms__dialog-profit-item {
+  
+  display: flex;
+  font-family: Geologica;
+font-size: 18px;
+font-weight: 250;
+line-height: 23.4px;
+}
+
+.terms__dialog-profit-item:nth-child(1) {
+  margin-bottom: 13px;
+}
+
+.terms__dialog-profit-item:nth-child(2) {
+  padding-left: 3px;
+  font-family: Bicubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.81px; 
+  margin-bottom: 15px;
+}
+
+.terms__dialog-profit-item:nth-child(3) {
+  display: flex;
+  padding-left: 4px;
+}
+
+.terms__dialog-profit-item:nth-child(3)::before {
+  content: url('../img/investmentsSmallSvg.svg');
+  margin-right: 16px;
+}
+
+.terms__dialog-profit-item:nth-child(4) {
+  padding-left: 4px;
+  margin-bottom: 3px;
+}
+
+.terms__dialog-profit-item:nth-child(4)::before {
+  padding-top: 5px;
+  content: url('../img/handShakeSvg.svg');
+  margin-right: 14px;
+}
+
+.terms__dialog-profit-item:nth-child(5) {
+  max-width: 380px;
+  padding-left: 4px;
+  margin-bottom: 15px;
+}
+
+.terms__dialog-profit-item:nth-child(5)::before {
+  padding-top: 13px;
+  content: url('../img/heartSvg.svg');
+  margin-right: 16px;
+}
+
+.terms__dialog-profit-online {
+  padding-top: 1px;
+}
+
+
+.terms__dialog-profit-help {
+  padding-top: 2px;
 }
