@@ -1,6 +1,7 @@
 .header {
   padding: 27px 0 62px 0;
   background: url('../img/headerBackGround.jfif') no-repeat center center;
+  background-size: cover;
   border-radius: 22.27px;
   margin-bottom: 31px;
 }
@@ -155,7 +156,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #413CB2;
+  background: #1C195B;
   border-radius: 19.65px 19px 19.65px 0.85px;
   font-family: Wadik;
   font-size: 16px;

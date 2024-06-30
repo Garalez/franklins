@@ -1,0 +1,135 @@
+.qa-dialog-income {
+  position: relative;
+  isolation: isolate;
+  border-radius: 22.27px;
+  padding: 70px 105px 70px 113px;
+  margin-bottom: 25px;
+  background-color: #F1F1F1;
+}
+
+.qa-dialog-income::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 38%;
+  height: 100%;
+  background: url('../img/qaDialogIncomeLeftElipsis.png') no-repeat center center;
+  z-index: -1;
+  border-top-left-radius: 22.27px;
+  border-bottom-left-radius: 22.27px;
+}
+
+.qa-dialog-income::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 34%;
+  height: 88%;
+  background: url('../img/qaDialogIncomeRightElipsis.png') no-repeat center center;
+  z-index: -1;
+  border-top-right-radius: 22.27px;
+  border-bottom-right-radius: 22.27px;
+}
+
+.qa-dialog-income__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.qa-dialog-income__item:nth-child(1) {
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.qa-dialog-income__item:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+.qa-dialog-income__item:nth-child(3) {
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.qa-dialog-income__first-question {
+  padding: 25px 35px 26px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #413cb2;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.qa-dialog-income__first-answer-wrapper {
+  max-width: 642px;
+  background-color: #1c195b;
+  padding: 25px 35px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.qa-dialog-income__first-answer-team {
+  margin-bottom: 21px;
+}
+
+.qa-dialog-income__first-answer-tasks {
+  margin-bottom: 24px;
+}
+
+.qa-dialog-income__first-answer-tests-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 23px 15px 20px 26px;
+  border-radius: 10px;
+  background: url('../img/qaDialogIncomeFirstAnswerBG.png') no-repeat;
+  font-family: Geologica;
+font-size: 18px;
+font-weight: 400;
+line-height: 23.4px;
+}
+
+.qa-dialog-income__first-answer-tests-currency-img {
+  padding-top: 3px;
+}
+
+.qa-dialog-income__first-answer-tests-text {
+  margin-bottom: 21px;
+}
+
+.qa-dialog-income__first-answer-tests-opportunities {
+  color: #1C195B;
+}
+
+.qa-dialog-income__second-question {
+  max-width: 759px;
+  padding: 25px 35px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #413cb2;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.qa-dialog-income__second-answer-wrapper {
+  max-width: 651px;
+  padding: 25px 35px 24px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1c195b;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.qa-dialog-income__second-answer-advantage {
+  
+  margin-bottom: 23px;
+}

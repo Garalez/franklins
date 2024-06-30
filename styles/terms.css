@@ -1,5 +1,6 @@
 .terms {
   background: url('../img/headerBackGround.jfif') no-repeat center center;
+  background-size: cover;
   border-radius: 25px;
   padding: 0 0 59px 113px;
   margin-bottom: 25px;

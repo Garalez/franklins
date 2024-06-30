@@ -2,6 +2,10 @@
 @import url("./introduction.css");
 @import url("./terms.css");
 @import url("./questions.css");
+@import url("./qa-dialog-investments.css");
+@import url("./qa-dialog-income.css");
+@import url("./qa-dialog-team.css");
+@import url("./qa-dialog-earnings.css");
 
 @font-face {
   font-family: Bicubik;
@@ -87,4 +91,8 @@ main {
 
 .text-selection-blue {
   color: #544CF9;
+}
+
+.text-selection-red {
+  color: #FF5050 ;
 }
