@@ -1,0 +1,366 @@
+.qa-dialog-acknowledge {
+  margin-bottom: 25px;
+  background: url('../img/5thBlockBG.jfif') no-repeat center;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.qa-dialog-acknowledge__list {
+  padding: 70px 105px 70px 113px;
+}
+
+.qa-dialog-acknowledge__item {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.qa-dialog-acknowledge__item:nth-child(1) {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-dialog-acknowledge__item:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.qa-dialog-acknowledge__item:nth-child(3) {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.qa-dialog-acknowledge__first-question {
+  padding: 24px 35px 26px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #413cb2;
+  font-family: Wadik;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.qa-dialog-acknowledge__first-answer-wrapper {
+  max-width: 686px;
+  padding: 25px 35px 25px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1c195b;
+}
+
+.qa-dialog-acknowledge__first-answer-text-wrapper {
+  margin-bottom: 28px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.zero-margin-padding {
+  padding: 0;
+  margin: 0;
+}
+
+.qa-dialog-acknowledge__first-answer:nth-of-type(1) {
+  margin-bottom: 22px;
+}
+
+.qa-dialog-acknowledge__first-answer:nth-of-type(2) {
+  margin-bottom: 23px;
+}
+
+.qa-dialog-acknowledge__first-answer:nth-of-type(3) {
+  margin-bottom: 21px;
+}
+
+.qa-dialog-acknowledge__second-question {
+  padding: 24px 35px 26px 35px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #413cb2;
+  font-family: Wadik;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.qa-dialog-acknowledge__second-answer-wrapper {
+  max-width: 1096px;
+  padding: 25px 34px 10px 34px;
+  border-radius: 19.65px 19px 19.65px 0.85px;
+  background-color: #1c195b;
+}
+
+.qa-dialog-acknowledge__second-answer {
+  padding-left: 1px;
+  margin-bottom: 26px;
+  font-family: Wadik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26.54px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+  padding-left: 1px;
+  margin-bottom: 24px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  padding: 6px 0px 3px 6px;
+}
+
+.custom-padding-1 {
+  padding: 6px 0px 4px 6px;
+  margin-bottom: 9px;
+}
+
+.custom-padding-2 {
+  padding: 7px 0px 6px 12px;
+  margin-bottom: 9px;
+  gap: 13px;
+}
+
+.custom-padding-3 {
+  padding: 7px 0px 7px 7px;
+  gap: 8px;
+}
+
+.custom-padding-4 {
+  height: fit-content;
+  padding: 9px 0px 7px 11px;
+  margin-bottom: 7px;
+  gap: 8px;
+}
+.custom-padding-5 {
+  padding: 12px 0px 7px 9px;
+  gap: 8px;
+}
+.custom-padding-6 {
+  padding: 8px 0px 15px 9px;
+  margin-bottom: 9px;
+  gap: 14px;
+}
+.custom-padding-7 {
+  padding: 17px 0px 7px 7px;
+  margin-bottom: 0;
+  gap: 16px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-1.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-2.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(3) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-3.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-4.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-5.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(3)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-6.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(3)
+  .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+  background: url('../img/acknowledgePictures/teamExperienceBG-7.svg') no-repeat;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-1 {
+  width: 66.04px;
+  padding-top: 3px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-2 {
+  width: 55.04px;
+  padding-top: 2px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-3 {
+  width: 64px;
+  padding-top: 2px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-4 {
+  width: 61.92px;
+  padding-top: 2px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-5 {
+  width: 63.89px;
+  padding-top: 2px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-6 {
+  width: 67.42px;
+  padding-top: 2px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-img-wrapper-7 {
+  width: 68.21px;
+  padding-top: 2px;
+}
+
+/* .qa-dialog-acknowledge__second-answer_experience-text {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+} */
+.qa-dialog-acknowledge__second-answer_experience-text-1 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 213px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-2 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 180px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-3 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 169px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-4 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 210px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-5 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 233px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-5:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-6 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 186px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-6:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-7 {
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.9px;
+  max-width: 211px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-img-wrapper {
+  position: relative;
+  width: 158.9px;
+  height: 143.66px;
+  margin-bottom: 14px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(1)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after,
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(5)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after,
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(6)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+  position: absolute;
+  content: url('../img/acknowledgePictures/teamMemberFlagUkraine.svg');
+  top: 8px;
+  right: 9px;
+  width: 26.6px;
+  height: 26.6px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(2)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+  position: absolute;
+  content: url('../img/acknowledgePictures/teamMemberFlagMoldova.svg');
+  top: 8px;
+  right: 9px;
+  width: 26.6px;
+  height: 26.6px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(3)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+  position: absolute;
+  content: url('../img/acknowledgePictures/teamMemberFlagBelarus.svg');
+  top: 8px;
+  right: 9px;
+  width: 26.6px;
+  height: 26.6px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(4)
+  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+  position: absolute;
+  content: url('../img/acknowledgePictures/teamMemberFlagUSA.svg');
+  top: 8px;
+  right: 9px;
+  width: 26.6px;
+  height: 26.6px;
+}
+
+.qa-dialog-acknowledge__second-answer_team {
+  display: flex;
+  gap: 15px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-name {
+  padding-left: 1px;
+  font-family: Bicubik;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.9px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-position {
+  font-family: Geologica;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.2px;
+  color: #ffffff73;
+}

@@ -70,7 +70,7 @@
 
 .qa-dialog-team__first-answer-step {
   position: relative;
-  padding: 11px 18px 12px 30px;
+  padding: 11px 18px 11px 30px;
   background-color: #5d29f1;
   border-radius: 6px;
   width: fit-content;
@@ -112,7 +112,7 @@
 }
 
 .qa-dialog-team__first-answer-item:nth-of-type(2) .qa-dialog-team__first-answer-text {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .qa-dialog-team__first-answer-item:nth-of-type(3) .qa-dialog-team__first-answer-step,
@@ -175,7 +175,7 @@
 }
 
 .qa-dialog-team__second-answer-todo {
-  max-width: 336px;
+  max-width: 337px;
   padding-top: 4px;
 }
 
