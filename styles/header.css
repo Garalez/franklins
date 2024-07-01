@@ -63,8 +63,8 @@
   width: 25px;
   height: 28px;
   position: relative;
-  top: -1px;
-  padding-right: 2px;
+  top: -0.4px;
+  padding: 0px 2px 1px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +85,7 @@
 }
 
 .head__warnings {
-  width: 491px;
-  height: 57px;
+  padding: 9px 10px 9px 18px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -102,7 +101,7 @@
 }
 
 .head__subheading_wrapper {
-  margin-bottom: 78px;
+  margin-bottom: 79px;
 }
 
 .head__subheading {

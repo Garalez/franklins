@@ -2,8 +2,8 @@
   position: relative;
   isolation: isolate;
   border-radius: 22.27px;
-  padding: 73px 103px 84px 113px;
-  margin-bottom: 29px;
+  padding: 73px 103px 88px 113px;
+  margin-bottom: 25px;
   background-color: #F1F1F1;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .questions__item_third-answer-reputation {
-  padding: 25px 40px 23px 35px;
+  padding: 25px 40px 22px 35px;
   max-width: 599px;
   background-color: #1c195b;
   border-radius: 19.65px 19px 19.65px 0.85px;
@@ -135,7 +135,7 @@
   position: absolute;
   width: 666px;
   height: 570px;
-  bottom: -4px;
+  bottom: 0;
   right: 8px;
   z-index: -1;
 }
