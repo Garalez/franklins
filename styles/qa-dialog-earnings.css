@@ -46,7 +46,7 @@
 }
 
 .qa-dialog-earnings__first-question {
-  padding: 25px 34px 26px 33px;
+  padding: 25px 34px 25px 33px;
   border-radius: 19.65px 19px 19.65px 0.85px;
   background-color: #413cb2;
   font-family: Wadik;
@@ -125,7 +125,7 @@
 
 .qa-dialog-earnings__second-question {
   max-width: 1044px;
-  padding: 25px 35px 25px 35px;
+  padding: 25px 35px 26px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
   background-color: #413cb2;
   font-family: Wadik;

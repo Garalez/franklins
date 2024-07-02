@@ -87,11 +87,6 @@
 
 .qa-dialog-investments__item_info-item-work {
   padding-top: 4px;
-  letter-spacing: 0.1px;
-}
-
-.qa-dialog-investments__item_info-item-experience {
-  letter-spacing: 0.14px;
 }
 
 .qa-dialog-investments__item_info-item-verification {
@@ -192,12 +187,7 @@
   content: url('../img/checkmarkSvg.svg');
 }
 
-.qa-dialog-investments__item_third-answer-text:nth-child(1) {
-  letter-spacing: 0.05px;
-  margin-bottom: 10px;
-}
-
+.qa-dialog-investments__item_third-answer-text:nth-child(1),
 .qa-dialog-investments__item_third-answer-text:nth-child(3) {
   margin-bottom: 10px;
-  letter-spacing: 0.14px;
 }

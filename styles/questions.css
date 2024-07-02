@@ -4,7 +4,7 @@
   border-radius: 22.27px;
   padding: 73px 103px 88px 113px;
   margin-bottom: 25px;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .questions::before {
@@ -104,10 +104,7 @@
 }
 
 .questions__item_second-answer-difficulties-wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 17px;
-  padding: 22px 31px 31px 26px;
+  padding: 22px 31px 31px 65px;
   border-radius: 10px;
   background: url('../img/thirdAnswerBG.png') no-repeat;
 }
@@ -117,6 +114,19 @@
 }
 
 .questions__item_second-answer-difficulties {
+  position: relative;
+  color: #000000;
+}
+
+.questions__item_second-answer-difficulties::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: url('../img/blueDollarSignSvg.svg') no-repeat;
+  background-size: contain;
+  left: -39px;
+  top: 4px;
   color: #000000;
 }
 

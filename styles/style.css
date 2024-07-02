@@ -1,3 +1,4 @@
+@import url("./utilities.css");
 @import url("./header.css");
 @import url("./introduction.css");
 @import url("./terms.css");
@@ -120,4 +121,10 @@ fieldset {
 
 .text-selection-red {
   color: #FF5050 ;
+}
+
+@media (max-width: 390px) {
+  body {
+    padding: 0;
+  }
 }

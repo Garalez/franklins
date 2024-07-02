@@ -128,7 +128,7 @@
 
 .terms__dialog-cards_requirements {
   position: relative;
-  padding: 28px 19px 0 41px;
+  padding: 28px 26px 0 41px;
 }
 
 .terms__dialog-cards_requirements::after {
@@ -167,7 +167,6 @@
 }
 
 .terms__dialog-cards_requirements-day-limits {
-  letter-spacing: 0.15px;
   margin-bottom: 12px;
 }
 
@@ -215,77 +214,6 @@
 
 .terms__dialog-cards_requirements-capital::before {
   content: url('../img/capitalSvg.svg');
-}
-
-.terms__dialog-request {
-  padding-left: 4px;
-  margin-bottom: 23px;
-}
-
-.terms__dialog-request_button-wrapper {
-  padding-left: 6px;
-  margin-bottom: 16px;
-}
-
-.terms__dialog-request_button {
-  position: relative;
-  padding: 19px 53px 14px 47px;
-  font-family: Bicubik;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  border: none;
-  outline: none;
-  background-color: #05e9f0;
-  box-shadow: -6px 6px 18px rgba(0, 0, 0, 0.26), -6px 6px 0px 0px #05e9f0;
-}
-
-.terms__dialog-request_button::after {
-  content: url('../img/freeBadgeSvg.svg');
-  position: absolute;
-  top: -3px;
-  right: -5px;
-}
-
-.terms__dialog-request_statistic-wrapper {
-  display: flex;
-}
-
-.terms__dialog-request_statistic-container {
-  padding: 9px 0px 14px 28px;
-  background: border-box url('../img/counterBG.png') no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.terms__dialog-request_statistic-text {
-  max-width: 230px;
-  font-family: Geologica;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-.terms__dialog-request_statistic-counter {
-  position: relative;
-  top: 2px;
-  width: 92px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 11px;
-  border-radius: 6px;
-  background-color: #5d29f1;
-  box-shadow: 0px 0px 14px 0px #8b86ff73;
-  font-family: Wadik;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 19.91px;
 }
 
 .terms__dialog-profit-item {
