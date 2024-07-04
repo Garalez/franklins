@@ -81,11 +81,19 @@
   background: url('../img/exclamationMarkWarningDesktop.png') no-repeat;
 }
 
-.header__subheading_wrapper {
-  margin-bottom: 78px;
+.header__warnings_mobile,
+.header__subheading-mobile {
+  display: none;
+}
+
+.header__warnings_desktop,
+.header__subheading-desktop {
+  display: block;
 }
 
 .header__subheading {
+  margin-bottom: 78px;
+  padding: 0 20px;
   font-family: Wadik;
   font-size: 24px;
   font-weight: 700;
@@ -101,6 +109,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  padding: 0 20px
 }
 
 .header__dialog_wrapper {
@@ -145,13 +154,13 @@
   line-height: 17.7px;
 }
 
-@media (max-width: 390px) {
+
+
+@media (max-width: 590px) {
   .header {
-    padding: 52px 0 62px 0;
-    background: url('../img/headerBackGround.jfif') no-repeat center center;
-    background-size: cover;
+    padding: 52px 0 17px 0;
     border-radius: 0;
-    margin-bottom: 31px;
+    margin-bottom: 17px;
   }
 
   .header__logo-wrapper {
@@ -175,28 +184,81 @@
     margin-bottom: 14px;
     font-size: 12px;
     line-height: 15.6px;
-    text-align: start;
   }
 
   .header__heading_warnings-wrapper {
     padding-left: 20px;
+    margin-bottom: 20px;
   }
 
   .header__warnings {
     max-width: 332px;
-    padding: 3px 0 0 17px;
+    padding: 9px 13px 12px 17px;
     background: url('../img/headerWarningsMobileBG.png') no-repeat;
     font-size: 14px;
     line-height: 16.8px;
   }
 
   .header__warnings::before {
-    content: '';
-    position: absolute;
-    top: 14px;
-    left: -25px;
-    width: 25px;
-    height: 28px;
+    top: 20px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
     background: url('../img/exclamationMarkWarningMobile.png') no-repeat;
+  }
+
+  .header__warnings_mobile,
+  .header__subheading-mobile {
+    display: block;
+  }
+
+  .header__warnings_desktop,
+  .header__subheading-desktop {
+    display: none;
+  }
+
+  .header__subheading-mobile {
+    margin-bottom: 87px;
+    padding: 3px 0 0 19px;
+    font-size: 18px;
+    line-height: 19.91px;
+  }
+
+  .header__dialog_wrapper  {
+    gap: 15px;
+    padding: 0px 20px 0 24px;
+  }
+
+  .header__dialog_avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__dialog_question-text {
+    padding: 13px 25px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .header__dialog_answer-text {
+    max-width: 227px;
+    padding: 13px 26px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+
+  }
+}
+
+@media (max-width: 390px) {
+  .header__heading {
+    text-align: start;
+  }
+
+  .header__subheading-mobile {
+    text-align: start;
+  }
+
+  .header__dialog_container {
+    padding: 0;
   }
 }

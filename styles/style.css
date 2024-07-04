@@ -123,7 +123,7 @@ fieldset {
   color: #FF5050 ;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 590px) {
   body {
     padding: 0;
   }

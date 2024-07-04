@@ -1,4 +1,8 @@
 .introduction {
+  overflow: hidden;
+}
+
+.introduction__container {
   position: relative;
   isolation: isolate;
   border-radius: 22.27px;
@@ -7,7 +11,7 @@
   background-color: #f1f1f1;
 }
 
-.introduction::before {
+.introduction__container::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,7 +24,7 @@
   border-bottom-left-radius: 22.27px;
 }
 
-.introduction::after {
+.introduction__container::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -52,6 +56,15 @@
   padding: 25px 33px 3px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
   background-color: #1c195b;
+  z-index: 2;
+}
+
+.introduction__dialog_text-wrapper-mobile {
+  display: none;
+}
+
+.introduction__dialog_text-wrapper-desktop {
+  display: block;
 }
 
 .introduction__dialog_text {
@@ -113,4 +126,227 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
+}
+
+@media (max-width: 1280px) {
+  .introduction__container::before {
+    background: url('../img/questionsLeftElipsis.png') no-repeat center center;
+  }
+
+  .introduction__container::after {
+    height: 91%;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 600px;
+  }
+  .introduction__info_owners-photo {
+    right: -55px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .introduction__container {
+    padding-bottom: 357px;
+  }
+
+  .introduction__container::before {
+    height: 90%;
+  }
+
+  .introduction__container::after {
+    height: 63%;
+  }
+
+  .introduction__wrapper {
+    flex-direction: column;
+  }
+
+  .introduction__dialog {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 566px;
+  }
+
+  .introduction__dialog_text {
+    margin-bottom: 13px;
+    font-size: 16px;
+  }
+
+  .introduction__info {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+
+  .introduction__info_qr {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 17%;
+  }
+
+  .introduction__info_qr-code {
+    width: 135px;
+    height: 135px;
+  }
+
+  .introduction__info_owners-photo {
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+
+  .introduction__info_owners-figcaption {
+    right: 31%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .introduction__container::before {
+    height: 47%;
+  }
+}
+
+@media (max-width: 830px) {
+  .introduction__container::before {
+    height: 79%;
+  }
+
+  .introduction__container::after {
+    height: 56%;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 680px) {
+  .introduction__dialog {
+    padding-left: 25px;
+  }
+
+  .introduction__info_qr {
+    padding-right: 5%;
+  }
+
+  .introduction__info_owners-figcaption {
+    right: 15%;
+  }
+}
+
+@media (max-width: 590px) {
+  .introduction {
+    padding: 0 7px 0 6px;
+  }
+
+  .introduction__container {
+    padding-bottom: 164px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .introduction__container::before {
+    background-image: url('../img/introductionLeftElipsisMobileBG.png');
+    height: 71%;
+    width: 58%;
+    border-radius: 15px 0 0 0;
+  }
+
+  .introduction__container::after {
+    height: 71%;
+    width: 65%;
+  }
+
+  .introduction__dialog {
+    padding-left: 25px;
+  }
+
+  .introduction__dialog_text-wrapper-mobile {
+    display: block;
+  }
+
+  .introduction__dialog_text-wrapper-desktop {
+    display: none;
+  }
+
+  .introduction__wrapper {
+    flex-direction: column;
+  }
+
+  .introduction__dialog {
+    padding: 35px 5px 0 9px;
+    margin-bottom: 35px;
+    gap: 4px;
+  }
+
+  .introduction__dialog_text-wrapper {
+    max-width: 315px;
+    padding: 15px 30px 13px 25px;
+  }
+
+  .introduction__dialog_text {
+    font-size: 14px;
+    line-height: 18.2px;
+    margin-bottom: 17px;
+    max-width: 260px;
+  }
+
+  .introduction__dialog_text:nth-of-type(3) {
+    margin-bottom: 14px;
+  }
+
+  .introduction__dialog_text:nth-of-type(5) {
+    max-width: 248px;
+    margin-bottom: 0;
+  }
+
+  .introduction__info_figcaption {
+    padding-right: 0;
+    font-size: 12px;
+    line-height: 16.2px;
+  }
+
+  .introduction__info_qr {
+    padding-right: 8px;
+  }
+
+  .introduction__info_qr-code {
+    width: 107px;
+    height: 106px;
+  }
+
+  .introduction__info_owners-photo {
+    width: 359px;
+    height: 320px;
+  }
+
+  .introduction__info_owners-figcaption {
+    right: 34px;
+    bottom: 21px;
+    width: 203px;
+    height: 67px;
+    border-radius: 4.3px;
+    padding: 5px 0 0 13px;
+  }
+
+  .introduction__info_owners-info-heading {
+    font-size: 14px;
+    margin-bottom: 1px;
+  }
+
+  .introduction__info_owners-info-text {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+}
+
+@media (max-width: 390px) {
+  .introduction__container::after {
+    background-image: url('../img/introductionRightElipsisMobileBG.png');
+    height: 122%;
+    width: 100%;
+    border-radius: 0 0 15px 0;
+  }
 }
