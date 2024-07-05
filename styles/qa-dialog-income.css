@@ -1,4 +1,4 @@
-.qa-dialog-income {
+.qa-dialog-income__container {
   position: relative;
   isolation: isolate;
   border-radius: 22.27px;
@@ -7,27 +7,29 @@
   background-color: #f1f1f1;
 }
 
-.qa-dialog-income::before {
+.qa-dialog-income__container::before {
   position: absolute;
   top: 0;
   left: 0;
   content: '';
   width: 38%;
   height: 100%;
-  background: url('../img/qaDialogIncomeLeftElipsis.png') no-repeat center center;
+  background: url('../img/qaDialogIncomeLeftElipsis.png') no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
   border-top-left-radius: 22.27px;
   border-bottom-left-radius: 22.27px;
 }
 
-.qa-dialog-income::after {
+.qa-dialog-income__container::after {
   position: absolute;
   top: 0;
   right: 0;
   content: '';
   width: 34%;
-  height: 88%;
-  background: url('../img/qaDialogIncomeRightElipsis.png') no-repeat center center;
+  height: 100%;
+  background: url('../img/qaDialogIncomeRightElipsis.png') no-repeat;
+  background-size: 100% 100%;
   z-index: -1;
   border-top-right-radius: 22.27px;
   border-bottom-right-radius: 22.27px;
@@ -86,12 +88,12 @@
   padding: 22px 15px 21px 65px;
   border-radius: 10px;
   background: url('../img/qaDialogIncomeFirstAnswerBG.png') no-repeat;
+  background-size: 100% 100%;
   font-family: Geologica;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
 }
-
 
 .qa-dialog-income__first-answer-tests-text {
   position: relative;
@@ -104,6 +106,7 @@
   width: 24px;
   height: 24px;
   background: url('../img/blueDollarSignSvg.svg') no-repeat;
+  background-size: 100% 100%;
   top: 4px;
   left: -39px;
 }
@@ -136,4 +139,146 @@
 
 .qa-dialog-income__second-answer-advantage {
   margin-bottom: 23px;
+}
+
+.qa-dialog-income__first-answer-team-desktop {
+  display: block;
+}
+
+.qa-dialog-income__first-answer-team-mobile {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .qa-dialog-income__container::before {
+    width: 50%;
+  }
+
+  .qa-dialog-income__container::after {
+    width: 39%;
+  }
+
+  .qa-dialog-income__first-answer-wrapper,
+  .qa-dialog-income__second-answer-wrapper,
+  .qa-dialog-income__first-question,
+  .qa-dialog-income__second-question {
+    max-width: 490px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .qa-dialog-income__container {
+    padding: 70px 40px;
+  }
+}
+
+@media (max-width: 830px) {
+  .qa-dialog-income__container::after {
+    width: 43%;
+  }
+
+  .qa-dialog-income__first-answer-wrapper,
+  .qa-dialog-income__second-answer-wrapper,
+  .qa-dialog-income__first-question,
+  .qa-dialog-income__second-question {
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 590px) {
+  .qa-dialog-income {
+    padding: 0 8px 0 6px;
+  }
+
+  .qa-dialog-income__container {
+    border-radius: 15px;
+    padding: 30px 7px 20px 12px;
+  }
+
+  .qa-dialog-income__container::before {
+    background-image: url('../img/questionsLeftElipsisMobileBG.png');
+    width: 100%;
+  }
+
+  .qa-dialog-income__container::after {
+    display: none;
+  }
+
+  .qa-dialog-income__first-question {
+    max-width: 226px;
+    padding: 13px 29px 12px 24px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .qa-dialog-income__first-answer-wrapper {
+    padding: 15px 12px 14px 25px;
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  .qa-dialog-income__first-answer-team-desktop,
+  .qa-dialog-income__first-answer-tasks-desktop {
+    display: none;
+  }
+
+  .qa-dialog-income__first-answer-team-mobile,
+  .qa-dialog-income__first-answer-tasks-mobile {
+    margin-bottom: 17px;
+    display: block;
+  }
+
+  .qa-dialog-income__first-answer-tasks-mobile {
+    margin-bottom: 14.4px;
+  }
+
+  .qa-dialog-income__item:nth-child(1),
+  .qa-dialog-income__item:nth-child(3) {
+    margin-bottom: 22px;
+  }
+
+  .qa-dialog-income__item:nth-child(2),
+  .qa-dialog-income__item:nth-child(4) {
+    gap: 4px;
+    margin-bottom: 22px;
+  }
+
+  .qa-dialog-income__first-answer-tests-wrapper {
+    background-image: url('../img/qaDialogIncomeFirstAnswerMobileBG.png');
+    padding: 12px 17px 13px 37px;
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  .qa-dialog-income__first-answer-tests-text {
+    margin-bottom: 18px;
+  }
+
+  .qa-dialog-income__first-answer-tests-opportunities {
+    max-width: 200px;
+  }
+
+  .qa-dialog-income__first-answer-tests-text::before {
+    width: 19px;
+    height: 19px;
+    top: 2px;
+    left: -26px;
+  }
+
+  .qa-dialog-income__second-question {
+    max-width: 257px;
+    padding: 13px 33px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .qa-dialog-income__second-answer-wrapper {
+    padding: 15px 35px 14px 25px;
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  .qa-dialog-income__second-answer-advantage {
+    margin-bottom: 18px;
+  }
 }
