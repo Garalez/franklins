@@ -96,9 +96,9 @@
 }
 
 .qa-dialog-acknowledge__second-answer_experience {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 21px;
   padding-left: 1px;
   margin-bottom: 25px;
 }
@@ -108,22 +108,30 @@
   flex-direction: column;
 }
 
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1) {
+  margin-right: 18px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2) {
+  margin-right: 22px;
+}
+
 .qa-dialog-acknowledge__second-answer_experience-wrapper {
   height: 100%;
   width: 100%;
   display: flex;
   gap: 8px;
-  padding: 6px 0px 3px 6px;
+  padding: 7px 0px 3px 6px;
 }
 
 .custom-padding-1 {
-  padding: 6px 0px 4px 6px;
-  margin-bottom: 9px;
+  padding-right: 39px;
+  margin-bottom: 11px;
 }
 
 .custom-padding-2 {
   padding: 7px 0px 6px 12px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   gap: 13px;
 }
 
@@ -139,11 +147,11 @@
   gap: 8px;
 }
 .custom-padding-5 {
-  padding: 12px 0px 7px 9px;
+  padding: 12px 12px 7px 9px;
   gap: 8px;
 }
 .custom-padding-6 {
-  padding: 8px 0px 15px 9px;
+  padding: 8px 50px 15px 9px;
   margin-bottom: 9px;
   gap: 14px;
 }
@@ -223,12 +231,6 @@
   padding-top: 2px;
 }
 
-/* .qa-dialog-acknowledge__second-answer_experience-text {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
-} */
 .qa-dialog-acknowledge__second-answer_experience-text-1 {
   font-family: Geologica;
   font-size: 14px;
@@ -295,9 +297,22 @@
 
 .qa-dialog-acknowledge__second-answer_team-img-wrapper {
   position: relative;
-  width: 158.9px;
-  height: 143.66px;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure {
+  max-width: 159px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-child(1),
+.qa-dialog-acknowledge__second-answer_team-figure:nth-child(2),
+.qa-dialog-acknowledge__second-answer_team-figure:nth-child(3),
+.qa-dialog-acknowledge__second-answer_team-figure:nth-child(5) {
+  margin-right: 15px;
+}
+
+.qa-dialog-acknowledge__second-answer_team-figure:nth-child(4) {
+  margin-right: 14px;
 }
 
 .qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(1)
@@ -346,7 +361,8 @@
 
 .qa-dialog-acknowledge__second-answer_team {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 15px;
 }
 
 .qa-dialog-acknowledge__second-answer_team-name {
@@ -363,4 +379,19 @@
   font-weight: 400;
   line-height: 16.2px;
   color: #ffffff73;
+}
+
+@media (max-width: 1420px) {
+
+  .qa-dialog-acknowledge__second-answer_experience {
+
+    justify-content: flex-start;
+      padding-left: 19%;
+  }
+
+  .qa-dialog-acknowledge__second-answer_team {
+    justify-content: flex-start;
+      padding-left: 19%;
+
+  }
 }

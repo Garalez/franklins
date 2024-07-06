@@ -94,14 +94,16 @@
 .questions__item_first-answer-teaching-desktop,
 .questions__item_second-answer-growth-desktop,
 .questions__item_second-answer-difficulties-desktop,
-.questions__item_third-answer-reputation-desktop {
+.questions__item_third-answer-reputation-desktop,
+.questions__item_first-answer-team-desktop {
   display: block;
 }
 
 .questions__item_first-answer-teaching-mobile,
 .questions__item_second-answer-growth-mobile,
 .questions__item_second-answer-difficulties-mobile,
-.questions__item_third-answer-reputation-mobile {
+.questions__item_third-answer-reputation-mobile,
+.questions__item_first-answer-team-mobile {
   display: none;
 }
 
@@ -278,7 +280,6 @@
     padding: 30px 12px 390px 12px;
   }
 
-
   .questions__container::before {
     height: 71%;
     width: 91%;
@@ -377,8 +378,7 @@
 
 @media (max-width: 390px) {
   .questions {
-    
-  margin-bottom: 24px;
+    margin-bottom: 24px;
   }
   .questions__container {
     border-radius: 15px;
@@ -437,14 +437,16 @@
   .questions__item_first-answer-teaching-desktop,
   .questions__item_second-answer-growth-desktop,
   .questions__item_second-answer-difficulties-desktop,
-  .questions__item_third-answer-reputation-desktop {
+  .questions__item_third-answer-reputation-desktop,
+  .questions__item_first-answer-team-desktop {
     display: none;
   }
 
   .questions__item_first-answer-teaching-mobile,
   .questions__item_second-answer-growth-mobile,
   .questions__item_second-answer-difficulties-mobile,
-  .questions__item_third-answer-reputation-mobile {
+  .questions__item_third-answer-reputation-mobile,
+  .questions__item_first-answer-team-mobile {
     display: block;
   }
 
