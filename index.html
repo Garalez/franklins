@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100 Franklins</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -880,9 +881,11 @@
               <img class="avatar" src="./img/ownerAvatar.png" alt="Аватар основателя компании" />
               <div class="qa-dialog-earnings__fourth-answer-wrapper">
                 <picture>
-                  <source media="(min-width: 590px)" srcset="./img/earningsPictures/diagram.png">
-                  <source media="(max-width: 591px)" srcset="./img/earningsPictures/diagramMobile.png">
-                  <img src="./img/earningsPictures/diagramMobile.png" alt=""/>
+                  <source media="(min-width: 590px)" srcset="./img/earningsPictures/diagram.png" />
+                  <source
+                    media="(max-width: 591px)"
+                    srcset="./img/earningsPictures/diagramMobile.png" />
+                  <img src="./img/earningsPictures/diagramMobile.png" alt="" />
                 </picture>
                 <!-- <img src="./img/earningsPictures/diagram.png" alt="" /> -->
               </div>
@@ -892,259 +895,428 @@
       </section>
 
       <section class="qa-dialog-acknowledge">
-        <ul class="qa-dialog-acknowledge__list">
-          <li class="qa-dialog-acknowledge__item">
-            <p class="qa-dialog-acknowledge__first-question">
-              А вы точно <span class="text-selection">нас не обманете?</span>
-            </p>
-            <img class='avatar' src="./img/userAvatar.png" alt="Аватар пользователя" />
-          </li>
-          <li class="qa-dialog-acknowledge__item">
-            <img class='avatar' src="./img/ownerAvatar.png" alt="Аватар основателя компании" />
-            <div class="qa-dialog-acknowledge__first-answer-wrapper">
-              <div class="qa-dialog-acknowledge__first-answer-text-wrapper">
-                <p class="qa-dialog-acknowledge__first-answer">
-                  Обучить бесплатно каждого участника – это большая экспертная работа и огромный
-                  вклад
-                </p>
-                <p class="qa-dialog-acknowledge__first-answer">
-                  <span class="text-selection"
-                    >Мы за 100% прозрачность в наших действиях и за построение доверительных
-                    отношений в рамках сообщества</span
-                  >
-                </p>
-                <p class="qa-dialog-acknowledge__first-answer">
-                  К тому же все наши активности на крипторынке фиксируются<br />
-                  в онлайн-реестре (блокчейне). Это абсолютно прозрачный реестр, где каждую
-                  транзакцию, любое движение денег можно проверить и увидеть: сколько денег пришло,
-                  кому и куда они ушли далее 
-                </p>
-                <p class="qa-dialog-acknowledge__first-answer">
-                  <span class="text-selection"
-                    >Ни один доллар не пройдет мимо участников нашего сообщества!</span
-                  >
-                </p>
-              </div>
-              <div class="community-join-wrapper">
-                <div class="community-join-button-wrapper">
-                  <button class="community-join-button">Стать частью сообщества</button>
-                </div>
-                <div class="community-join-statistic-wrapper">
-                  <div class="community-join-statistic-container">
-                    <p class="community-join-statistic-text">
-                      Оставили заявку на подключение к сообществу:
-                    </p>
-                    <p class="community-join-statistic-counter">1891</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="qa-dialog-acknowledge__item">
-            <p class="qa-dialog-acknowledge__second-question">
-              <span class="text-selection">Кто будет в команде проекта?</span>
-            </p>
-            <img class='avatar' src="./img/userAvatar.png" alt="Аватар пользователя" />
-          </li>
-          <li class="qa-dialog-acknowledge__item">
-            <img class='avatar' src="./img/ownerAvatarBlueBG.png" alt="Аватар основателя компании" />
-            <div class="qa-dialog-acknowledge__second-answer-wrapper">
-              <p class="qa-dialog-acknowledge__second-answer">
-                Ниже описан
-                <span class="text-selection"
-                  >опыт crypto-команды<br />
-                  100 FRANKLINS</span
-                >
-                и представлены ключевые руководители сообщества
+        <div class="qa-dialog-acknowledge__container">
+          <ul class="qa-dialog-acknowledge__list">
+            <li class="qa-dialog-acknowledge__item">
+              <p class="qa-dialog-acknowledge__first-question">
+                А вы точно <span class="text-selection">нас не обманете?</span>
               </p>
-              <div class="qa-dialog-acknowledge__second-answer_experience">
-                <div class="qa-dialog-acknowledge__second-answer_experience-column">
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-1">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-1">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-1.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-1" />
-                    </div>
-                    <p class="qa-dialog-acknowledge__second-answer_experience-text-1">
-                      Сеть из 100+ crypto-инфлюенсеров с аудиторией в Telegram свыше 10 млн
-                      подписчиков
-                    </p>
-                  </div>
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-2">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-2">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-2.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-2" />
-                    </div>
-                    <p class="qa-dialog-acknowledge__second-answer_experience-text-2">
-                      Опыт организации crypto-пулов на 10+ млн долларов
-                    </p>
-                  </div>
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-3">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-3">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-3.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-3" />
-                    </div>
-                    <p class="qa-dialog-acknowledge__second-answer_experience-text-3">
-                      Создана платформа<br />
-                      по увеличению дохода crypto-инвесторов<br />
-                      и crypto-проектов
-                    </p>
-                  </div>
+              <img class="avatar" src="./img/userAvatar.png" alt="Аватар пользователя" />
+            </li>
+            <li class="qa-dialog-acknowledge__item">
+              <img class="avatar" src="./img/ownerAvatar.png" alt="Аватар основателя компании" />
+              <div class="qa-dialog-acknowledge__first-answer-wrapper">
+                <div class="qa-dialog-acknowledge__first-answer-text-wrapper">
+                  <p class="qa-dialog-acknowledge__first-answer">
+                    Обучить бесплатно каждого участника – это большая экспертная работа и огромный
+                    вклад
+                  </p>
+                  <p class="qa-dialog-acknowledge__first-answer">
+                    <span class="text-selection"
+                      >Мы за 100% прозрачность в наших действиях и за построение доверительных
+                      отношений в рамках сообщества</span
+                    >
+                  </p>
+                  <p
+                    class="qa-dialog-acknowledge__first-answer qa-dialog-acknowledge__first-answer-desktop">
+                    К тому же все наши активности на крипторынке фиксируются<br />
+                    в онлайн-реестре (блокчейне). Это абсолютно прозрачный реестр, где каждую
+                    транзакцию, любое движение денег можно проверить и увидеть: сколько денег
+                    пришло, кому и куда они ушли далее 
+                  </p>
+                  <p
+                    class="qa-dialog-acknowledge__first-answer qa-dialog-acknowledge__first-answer-mobile">
+                    К тому же все наши активности<br />
+                    на крипторынке фиксируются<br />
+                    в онлайн-реестре (блокчейне).<br />
+                    Это абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег
+                    можно проверить<br />
+                    и увидеть: сколько денег пришло, кому и куда они ушли далее 
+                  </p>
+                  <p class="qa-dialog-acknowledge__first-answer">
+                    <span class="text-selection"
+                      >Ни один доллар не пройдет мимо участников нашего сообщества!</span
+                    >
+                  </p>
                 </div>
-                <div class="qa-dialog-acknowledge__second-answer_experience-column">
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-4">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-4">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-4.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-4" />
-                    </div>
-                    <p class="qa-dialog-acknowledge__second-answer_experience-text-4">
-                      Основан сервис по созданию ботов и автоворонок<br />
-                      для crypto-экспертов<br />
-                      и crypto-проектов
-                    </p>
+                <div class="community-join-wrapper">
+                  <div class="community-join-button-wrapper">
+                    <button class="community-join-button">Стать частью сообщества</button>
                   </div>
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-5">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-5">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-5.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-5" />
-                    </div>
-                    <div>
-                      <p class="qa-dialog-acknowledge__second-answer_experience-text-5">
-                        Опыт набора свыше 100.000 пользователей в crypto-проекты
+                  <div class="community-join-statistic-wrapper">
+                    <div class="community-join-statistic-container community-join-statistic-container__qa-dialog-acknowledge">
+                      <p class="community-join-statistic-text">
+                        Оставили заявку на подключение к сообществу:
                       </p>
-                      <p class="qa-dialog-acknowledge__second-answer_experience-text-5">
-                        Опыт создания бот-автоворонок для запуска криптопроектов (среднее количество
-                        иксов<br />
-                        на листинге х38)
-                      </p>
+                      <p class="community-join-statistic-counter">1891</p>
                     </div>
-                  </div>
-                </div>
-                <div class="qa-dialog-acknowledge__second-answer_experience-column">
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-6">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-6">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-6.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-6" />
-                    </div>
-                    <div>
-                      <p class="qa-dialog-acknowledge__second-answer_experience-text-6">
-                        Сообщество из 10.000+ программистов
-                      </p>
-                      <p class="qa-dialog-acknowledge__second-answer_experience-text-6">
-                        Опыт валидации SUI,<br />
-                        Solana, Aptos, NYM и еще с десятка crypto-проектов
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-7">
-                    <div class="qa-dialog-acknowledge__second-answer_experience-img-wrapper-7">
-                      <img
-                        src="./img/acknowledgePictures/teamExperienceImg-7.png"
-                        alt=""
-                        class="qa-dialog-acknowledge__second-answer_experience-img-7" />
-                    </div>
-                    <p class="qa-dialog-acknowledge__second-answer_experience-text-7">
-                      Партнерский опыт инкубации crypto-проектов и листинга на ByBit, OKX, MEXc,
-                      BitGet, Gate
-                    </p>
                   </div>
                 </div>
               </div>
-              <div class="qa-dialog-acknowledge__second-answer_team">
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-1.png"
-                      alt="" />
+            </li>
+            <li class="qa-dialog-acknowledge__item">
+              <p class="qa-dialog-acknowledge__second-question">
+                <span class="text-selection">Кто будет в команде проекта?</span>
+              </p>
+              <img class="avatar" src="./img/userAvatar.png" alt="Аватар пользователя" />
+            </li>
+            <li class="qa-dialog-acknowledge__item">
+              <img
+                class="avatar"
+                src="./img/ownerAvatarBlueBG.png"
+                alt="Аватар основателя компании" />
+              <div class="qa-dialog-acknowledge__second-answer-wrapper">
+                <p class="qa-dialog-acknowledge__second-answer">
+                  Ниже описан
+                  <span class="text-selection"
+                    >опыт crypto-команды<br />
+                    100 FRANKLINS</span
+                  >
+                  и представлены ключевые руководители сообщества
+                </p>
+                <div class="qa-dialog-acknowledge__second-answer_experience">
+                  <div class="qa-dialog-acknowledge__second-answer_experience-column">
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-1">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-1">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-1.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-1.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-1.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-1" />
+                        </picture>
+                      </div>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-1">
+                        Сеть из 100+ crypto-инфлюенсеров с аудиторией в Telegram свыше 10 млн
+                        подписчиков
+                      </p>
+                    </div>
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-2">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-2">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-2.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-2.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-2.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-2" />
+                        </picture>
+                      </div>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-2">
+                        Опыт организации crypto-пулов на 10+ млн долларов
+                      </p>
+                    </div>
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-3">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-3">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-3.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-3.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-3.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-3" />
+                        </picture>
+                      </div>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-3">
+                        Создана платформа<br />
+                        по увеличению дохода crypto-инвесторов<br />
+                        и crypto-проектов
+                      </p>
+                    </div>
                   </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Кир Уланов
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-2.png"
-                      alt="" />
+                  <div class="qa-dialog-acknowledge__second-answer_experience-column">
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-4">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-4">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-4.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-4.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-4.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-4" />
+                        </picture>
+                      </div>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-4">
+                        Основан сервис по созданию ботов и автоворонок<br />
+                        для crypto-экспертов<br />
+                        и crypto-проектов
+                      </p>
+                    </div>
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-5">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-5">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-5.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-5.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-5.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-5" />
+                        </picture>
+                      </div>
+                      <div>
+                        <p
+                          class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-5">
+                          Опыт набора свыше 100.000 пользователей в crypto-проекты
+                        </p>
+                        <p
+                          class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-5">
+                          Опыт создания бот-автоворонок для запуска криптопроектов (среднее
+                          количество иксов<br />
+                          на листинге х38)
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Игорь Жаленко
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-3.png"
-                      alt="" />
+                  <div class="qa-dialog-acknowledge__second-answer_experience-column">
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-6">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-6">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-6.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-6.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-6.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-6" />
+                        </picture>
+                      </div>
+                      <div>
+                        <p
+                          class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-6">
+                          Сообщество из 10.000+ программистов
+                        </p>
+                        <p
+                          class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-6">
+                          Опыт валидации SUI,<br />
+                          Solana, Aptos, NYM и еще с десятка crypto-проектов
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="qa-dialog-acknowledge__second-answer_experience-wrapper custom-padding-7">
+                      <div
+                        class="qa-dialog-acknowledge__second-answer_experience-img-wrapper qa-dialog-acknowledge__second-answer_experience-img-wrapper-7">
+                        <picture>
+                          <source
+                            media="(max-width: 590px)"
+                            srcset="./img/acknowledgePictures/teamExperienceMobileImg-7.png" />
+                          <source
+                            media="(min-width: 591px)"
+                            srcset="./img/acknowledgePictures/teamExperienceImg-7.png" />
+                          <img
+                            src="./img/acknowledgePictures/teamExperienceImg-7.png"
+                            alt=""
+                            class="qa-dialog-acknowledge__second-answer_experience-img-7" />
+                        </picture>
+                      </div>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-7 qa-dialog-acknowledge__second-answer_experience-text-7-desktop">
+                        Партнерский опыт инкубации crypto-проектов и листинга на ByBit, OKX, MEXc,
+                        BitGet, Gate
+                      </p>
+                      <p
+                        class="qa-dialog-acknowledge__second-answer_experience-text qa-dialog-acknowledge__second-answer_experience-text-7 qa-dialog-acknowledge__second-answer_experience-text-7-mobile">
+                        Партнерский опыт инкубации crypto-проектов и листинга<br />
+                        на ByBit, OKX, MEXc, BitGet, Gate
+                      </p>
+                    </div>
                   </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Ксандер Ким
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-4.png"
-                      alt="" />
+                </div>
+                <div class="qa-dialog-acknowledge__second-answer_team qa-dialog-acknowledge__second-answer_team-desktop">
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-1.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Кир Уланов
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-2.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Игорь Жаленко
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-3.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Ксандер Ким
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-4.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Алексей Помельников
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-5.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Владимир Бова
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                  <figure class="qa-dialog-acknowledge__second-answer_team-figure">
+                    <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                      <img
+                        class="qa-dialog-acknowledge__second-answer_team-img"
+                        src="./img/acknowledgePictures/teamMember-6.png"
+                        alt="" />
+                    </div>
+                    <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                      Валера Мушник
+                    </figcaption>
+                    <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                  </figure>
+                </div>
+                <div id='swiper' class="qa-dialog-acknowledge__second-answer_team swiper">
+                  <div class="qa-dialog-acknowledge__second-answer_team swiper-wrapper">
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-1.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Кир Уланов
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-2.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Игорь Жаленко
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-3.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Ксандер Ким
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-4.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Алексей Помельников
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-5.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Владимир Бова
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
+                    <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
+                      <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
+                        <img
+                          class="qa-dialog-acknowledge__second-answer_team-img"
+                          src="./img/acknowledgePictures/teamMember-6.png"
+                          alt="" />
+                      </div>
+                      <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
+                        Валера Мушник
+                      </figcaption>
+                      <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
+                    </figure>
                   </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Алексей Помельников
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-5.png"
-                      alt="" />
-                  </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Владимир Бова
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
-                <figure class="qa-dialog-acknowledge__second-answer_team-figure">
-                  <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
-                    <img
-                      class="qa-dialog-acknowledge__second-answer_team-img"
-                      src="./img/acknowledgePictures/teamMember-6.png"
-                      alt="" />
-                  </div>
-                  <figcaption class="qa-dialog-acknowledge__second-answer_team-name">
-                    Валера Мушник
-                  </figcaption>
-                  <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
-                </figure>
+                </div>
+                
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- <section class="qa-dialog-common-issues">
@@ -1350,5 +1522,18 @@
         </div>
       </div>
     </footer> -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        }
+      });
+    </script>
   </body>
 </html>

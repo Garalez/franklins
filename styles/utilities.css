@@ -46,7 +46,7 @@
 .community-join-statistic-container {
   padding: 9px 0px 14px 28px;
   background: border-box url('../img/counterBG.png') no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -76,6 +76,12 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 19.91px;
+}
+
+@media (max-width: 860px) {
+  .community-join-statistic-container__qa-dialog-acknowledge {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 590px) {

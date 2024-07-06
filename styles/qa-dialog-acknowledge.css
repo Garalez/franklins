@@ -1,12 +1,9 @@
-.qa-dialog-acknowledge {
+.qa-dialog-acknowledge__container {
   margin-bottom: 25px;
+  padding: 70px 105px 70px 113px;
   background: url('../img/5thBlockBG.jfif') no-repeat center;
   background-size: cover;
   border-radius: 25px;
-}
-
-.qa-dialog-acknowledge__list {
-  padding: 70px 105px 70px 113px;
 }
 
 .qa-dialog-acknowledge__item {
@@ -231,43 +228,30 @@
   padding-top: 2px;
 }
 
-.qa-dialog-acknowledge__second-answer_experience-text-1 {
+.qa-dialog-acknowledge__second-answer_experience-text {
   font-family: Geologica;
   font-size: 14px;
   font-weight: 400;
   line-height: 18.9px;
+}
+
+.qa-dialog-acknowledge__second-answer_experience-text-1 {
   max-width: 213px;
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-2 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 180px;
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-3 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 169px;
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-4 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 210px;
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-5 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 233px;
 }
 
@@ -276,10 +260,6 @@
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-6 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 186px;
 }
 
@@ -288,10 +268,6 @@
 }
 
 .qa-dialog-acknowledge__second-answer_experience-text-7 {
-  font-family: Geologica;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18.9px;
   max-width: 211px;
 }
 
@@ -381,17 +357,308 @@
   color: #ffffff73;
 }
 
+.qa-dialog-acknowledge__first-answer-desktop,
+.qa-dialog-acknowledge__second-answer_experience-text-7-desktop {
+  display: block;
+}
+
+.qa-dialog-acknowledge__first-answer-mobile,
+.qa-dialog-acknowledge__second-answer_experience-text-7-mobile {
+  display: none;
+}
+
+.qa-dialog-acknowledge__second-answer_team-desktop {
+  display: flex;
+}
+
+#swiper {
+  display: none;
+}
+
 @media (max-width: 1420px) {
-
   .qa-dialog-acknowledge__second-answer_experience {
-
     justify-content: flex-start;
-      padding-left: 19%;
+    padding-left: 19%;
   }
 
   .qa-dialog-acknowledge__second-answer_team {
     justify-content: flex-start;
-      padding-left: 19%;
-
+    padding-left: 19%;
   }
+}
+
+@media (max-width: 1000px) {
+  .qa-dialog-acknowledge__container {
+    padding: 50px 40px;
+  }
+
+  .qa-dialog-acknowledge__first-question,
+  .qa-dialog-acknowledge__first-answer-wrapper,
+  .qa-dialog-acknowledge__second-question,
+  .qa-dialog-acknowledge__second-answer-wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 830px) {
+  .qa-dialog-acknowledge__first-question,
+  .qa-dialog-acknowledge__first-answer-wrapper,
+  .qa-dialog-acknowledge__second-question,
+  .qa-dialog-acknowledge__second-answer-wrapper {
+    padding: 25px 23px 25px 25px;
+    max-width: 390px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience {
+    padding-left: 0;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1),
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2),
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(3) {
+    margin-right: 0;
+  }
+
+  .qa-dialog-acknowledge__second-answer_team {
+    padding-left: 0;
+  }
+
+  .qa-dialog-acknowledge__second-answer_team-figure:nth-child(2),
+  .qa-dialog-acknowledge__second-answer_team-figure:nth-child(4),
+  .qa-dialog-acknowledge__second-answer_team-figure:nth-child(6) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 590px) {
+  .qa-dialog-acknowledge {
+    padding: 0 7px 0 6px;
+  }
+
+  .qa-dialog-acknowledge__container {
+    padding: 35px 8px 35px 6px;
+    border-radius: 15px;
+  }
+
+  .qa-dialog-acknowledge__first-question {
+    max-width: 207px;
+    padding: 13px 18px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .qa-dialog-acknowledge__item:nth-child(1) {
+    margin-bottom: 30px;
+    padding-right: 3px;
+  }
+
+  .qa-dialog-acknowledge__item:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
+  .qa-dialog-acknowledge__item:nth-child(3) {
+    margin-bottom: 32px;
+  }
+
+  .qa-dialog-acknowledge__item:nth-child(4) {
+    gap: 11px;
+  }
+
+  .qa-dialog-acknowledge__first-answer-text-wrapper {
+    font-size: 14px;
+    line-height: 18.2px;
+  }
+
+  .qa-dialog-acknowledge__first-answer-wrapper {
+    padding: 15px 19px 3px 25px;
+  }
+
+  .qa-dialog-acknowledge__first-answer:nth-of-type(1) {
+    max-width: 265px;
+    margin-bottom: 17px;
+  }
+
+  .qa-dialog-acknowledge__first-answer:nth-of-type(2),
+  .qa-dialog-acknowledge__first-answer-text-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .qa-dialog-acknowledge__first-answer-mobile {
+    margin-bottom: 16px;
+  }
+
+  .qa-dialog-acknowledge__second-question {
+    max-width: 269px;
+    padding: 13px 23px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .qa-dialog-acknowledge__second-answer-wrapper {
+    max-width: 315px;
+    padding: 17px 18px 29px 23px;
+    overflow: hidden;
+  }
+
+  .qa-dialog-acknowledge__second-answer {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 17.7px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-1.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-2.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(1)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(3) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-3.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-4.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(2)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-5.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(3)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(1) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-6.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column:nth-of-type(3)
+    .qa-dialog-acknowledge__second-answer_experience-wrapper:nth-of-type(2) {
+    background-image: url('../img/acknowledgePictures/teamExperienceMobileBG-7.svg');
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text {
+    font-size: 13px;
+    line-height: 17.55px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-column {
+    width: 100%;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience {
+    padding-left: 2px;
+    margin-bottom: 50px;
+    row-gap: 10px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-img-wrapper {
+    width: fit-content;
+  }
+
+  .custom-padding-1 {
+    padding: 7px 0px 7px 4px;
+  }
+
+  .custom-padding-2 {
+    padding: 6px 0px 6px 8px;
+    margin-bottom: 10px;
+    gap: 11px;
+  }
+
+  .custom-padding-3 {
+    padding: 5px 0px 10px 7px;
+  }
+
+  .custom-padding-4 {
+    padding: 7px 0px 7px 8px;
+    margin-bottom: 12px;
+  }
+
+  .custom-padding-5 {
+    padding: 8px 12px 7px 7px;
+    margin-bottom: 2px;
+  }
+
+  .custom-padding-6 {
+    padding: 8px 23px 15px 10px;
+    margin-bottom: 6px;
+    gap: 10px;
+  }
+
+  .custom-padding-7 {
+    padding: 7px 0px 17px 9px;
+    margin-bottom: 0;
+    gap: 10px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-img-wrapper-1 {
+    padding-top: 1px;
+    padding-left: 4px;
+    width: fit-content;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-1 {
+    max-width: 195px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-2 {
+    max-width: 170px;
+    padding-top: 4px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-3 {
+    padding-top: 5px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-4 {
+    padding-top: 4px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-5 {
+    max-width: none;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience-text-6 {
+    max-width: 173px;
+  }
+
+  .qa-dialog-acknowledge__second-answer_team {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .qa-dialog-acknowledge__first-answer-desktop,
+  .qa-dialog-acknowledge__second-answer_experience-text-7-desktop,
+  .qa-dialog-acknowledge__second-answer_team-desktop {
+    display: none;
+  }
+
+  .qa-dialog-acknowledge__first-answer-mobile,
+  .qa-dialog-acknowledge__second-answer_experience-text-7-mobile,
+  .swiper {
+    display: block;
+  }
+
+  #swiper {
+    display: block;
+  }
+
+  .qa-dialog-acknowledge__second-answer_experience {
+    position: relative;
+  }
+  .qa-dialog-acknowledge__second-answer_experience::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    background: url('../img/acknowledgePictures/swiperPointer.svg') no-repeat;
+  }
+
 }
