@@ -2,7 +2,7 @@
   background: url('../img/headerBackGround.jfif') no-repeat center center;
   background-size: cover;
   border-radius: 25px;
-  padding: 0 30px 57px 113px;
+  padding: 0 30px 59px 113px;
   margin-bottom: 25px;
   font-family: Geologica;
   font-size: 18px;
@@ -163,16 +163,26 @@
   padding-left: 38px;
 }
 
-.terms__dialog-cards_requirements-item:nth-child(1)::before,
+.terms__dialog-cards_requirements-item:nth-child(1)::before {
+  content: '';
+  background: url('../img/checkmarkSvg.svg') no-repeat;
+  background-size: 100% 100%;
+  width: 23px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+}
+
 .terms__dialog-cards_requirements-item:nth-child(2)::before {
   content: '';
   background: url('../img/checkmarkSvg.svg') no-repeat;
-  background-size: contain;
-  width: 31.76px;
-  height: 18.63px;
+  background-size: 100% 100%;
+  width: 23px;
+  height: 100%;
   position: absolute;
-  left: 0;
-  top: 6px;
+  left: 0px;
+  top: -3px;
 }
 
 .terms__dialog-cards_requirements-day-limits {
@@ -187,7 +197,7 @@
 
 .terms__dialog-cards_requirements-capital {
   position: relative;
-  padding: 12px 18px 13px 28px;
+  padding: 12px 19px 12px 28px;
   background-color: #5d29f1;
   border-radius: 6px;
   font-family: Geologica;
@@ -291,13 +301,17 @@
   padding-left: 43px;
 }
 
+.terms__dialog-profit-experience-desktop {
+  display: block;
+}
+
+.terms__dialog-profit-experience-mobile {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .terms__container {
     padding: 0 30px 59px 20px;
-  }
-
-  .terms__dialog-wrapper {
-    justify-content: center;
   }
 
   .terms__dialog-cards {
@@ -454,11 +468,16 @@
     line-height: 18.2px;
   }
 
-  .terms__dialog-cards_requirements-item:nth-child(1)::before,
-  .terms__dialog-cards_requirements-item:nth-child(2)::before {
-    width: 13.76px;
+  .terms__dialog-cards_requirements-item:nth-child(1)::before{
+    width: 13px;
     left: 0px;
-    top: 4px;
+    top: -8px;
+  }
+  
+  .terms__dialog-cards_requirements-item:nth-child(2)::before {
+    width: 13px;
+    left: 0px;
+    top: -15px;
   }
 
   .terms__dialog-cards_requirements-capital {
@@ -515,14 +534,19 @@
 
   .terms__dialog-profit-online {
     margin-bottom: 4px;
-}
-  
+  }
 
   .terms__dialog-profit-help {
     max-width: 235px;
     margin-bottom: 1px;
   }
 
+  .terms__dialog-profit-experience-desktop {
+    display: none;
+  }
+
+  .terms__dialog-profit-experience-mobile {
+    max-width: fit-content;
+    display: block;
+  }
 }
-
-

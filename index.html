@@ -31,39 +31,19 @@
           зарабатывать на крипте. <span class="text-selection">Поможем</span><br />
           на каждом шаге. И даже <span class="text-selection">вложим в вас деньги</span>
         </p>
-        <p class="header__subheading header__subheading-mobile">
-          Мы <span class="text-selection">бесплатно</span><br />
-          вас научим<br />
-          зарабатывать на<br />
-          крипте. <span class="text-selection">Поможем</span><br />
-          на каждом шаге. И
-          <span class="text-selection"
-            >даже<br />
-            вложим в вас деньги</span
-          >
-        </p>
-        <!-- <p class="header__subheading header__subheading-desktop indentation10">
-            Мы <span class="text-selection">бесплатно</span> вас научим
-          </p>
-          <p class="header__subheading header__subheading-desktop indentation10">
-            зарабатывать на крипте. <span class="text-selection">Поможем</span>
-          </p>
-          <p class="header__subheading header__subheading-desktop">
-            на каждом шаге. И даже
-            <span class="text-selection">вложим в вас деньги</span>
-          </p> -->
-        <!-- <div class="header__subheading_wrapper header__subheading_wrapper-mobile">
-          <p class="header__subheading header__subheading-mobile indentation10">
-            Мы <span class="text-selection">бесплатно</span> вас научим
-          </p>
-          <p class="header__subheading header__subheading-mobile indentation10">
-            зарабатывать на крипте. <span class="text-selection">Поможем</span>
-          </p>
+        <div class='header__subheading-mobile-wrapper'>
           <p class="header__subheading header__subheading-mobile">
-            на каждом шаге. И даже
-            <span class="text-selection">вложим в вас деньги</span>
+            Мы <span class="text-selection">бесплатно</span><br />
+            вас научим<br />
+            зарабатывать на<br />
+            крипте. <span class="text-selection">Поможем</span><br />
+            на каждом шаге. И
+            <span class="text-selection"
+              >даже<br />
+              вложим в вас деньги</span
+            >
           </p>
-        </div> -->
+        </div>
         <div class="header__dialog_container">
           <div class="header__dialog_wrapper">
             <div class="header__dialog_question">
@@ -172,10 +152,14 @@
                 </figure>
               </div>
               <figure class="introduction__info_owners-figure">
-                <img
-                  class="introduction__info_owners-photo"
-                  src="./img/ownersPhoto.png"
-                  alt="Фото основателя" />
+                <picture>
+                  <source media="(min-width: 590px)" srcset="./img/ownersPhoto.png" />
+                  <source media="(max-width: 591px)" srcset="./img/ownersPhotoMobile.png" />
+                  <img
+                    class="introduction__info_owners-photo"
+                    src="./img/ownersPhoto.png"
+                    alt="Фото основателя" />
+                </picture>                
                 <figcaption class="introduction__info_owners-figcaption">
                   <p class="introduction__info_owners-info-heading">Кир Уланов</p>
                   <p class="introduction__info_owners-info-text">
@@ -280,8 +264,11 @@
                     </p>
                   </li>
                   <li class="terms__dialog-profit-item">
-                    <p class="terms__dialog-profit-experience">
+                    <p class="terms__dialog-profit-experience terms__dialog-profit-experience-desktop">
                       Новый, качественный опыт и сильное окружение для роста
+                    </p>
+                    <p class="terms__dialog-profit-experience terms__dialog-profit-experience-mobile">
+                      Новый, качественный опыт<br> и сильное окружение для роста
                     </p>
                   </li>
                 </ul>
@@ -887,7 +874,6 @@
                     srcset="./img/earningsPictures/diagramMobile.png" />
                   <img src="./img/earningsPictures/diagramMobile.png" alt="" />
                 </picture>
-                <!-- <img src="./img/earningsPictures/diagram.png" alt="" /> -->
               </div>
             </li>
           </ul>
@@ -939,16 +925,19 @@
                     >
                   </p>
                 </div>
-                <div class="community-join-wrapper">
-                  <div class="community-join-button-wrapper">
-                    <button class="community-join-button">Стать частью сообщества</button>
-                  </div>
-                  <div class="community-join-statistic-wrapper">
-                    <div class="community-join-statistic-container community-join-statistic-container__qa-dialog-acknowledge">
-                      <p class="community-join-statistic-text">
-                        Оставили заявку на подключение к сообществу:
-                      </p>
-                      <p class="community-join-statistic-counter">1891</p>
+                <div class='qa-dialog-acknowledge__community-join-wrapper'>
+                  <div class="community-join-wrapper">
+                    <div class="community-join-button-wrapper">
+                      <button class="community-join-button">Стать частью сообщества</button>
+                    </div>
+                    <div class="community-join-statistic-wrapper">
+                      <div
+                        class="community-join-statistic-container community-join-statistic-container__qa-dialog-acknowledge">
+                        <p class="community-join-statistic-text">
+                          Оставили заявку на подключение к сообществу:
+                        </p>
+                        <p class="community-join-statistic-counter">1891</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1162,7 +1151,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="qa-dialog-acknowledge__second-answer_team qa-dialog-acknowledge__second-answer_team-desktop">
+                <div
+                  class="qa-dialog-acknowledge__second-answer_team qa-dialog-acknowledge__second-answer_team-desktop">
                   <figure class="qa-dialog-acknowledge__second-answer_team-figure">
                     <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
                       <img
@@ -1236,7 +1226,7 @@
                     <p class="qa-dialog-acknowledge__second-answer_team-position">Должность</p>
                   </figure>
                 </div>
-                <div id='swiper' class="qa-dialog-acknowledge__second-answer_team swiper">
+                <div id="swiper" class="qa-dialog-acknowledge__second-answer_team swiper">
                   <div class="qa-dialog-acknowledge__second-answer_team swiper-wrapper">
                     <figure class="qa-dialog-acknowledge__second-answer_team-figure swiper-slide">
                       <div class="qa-dialog-acknowledge__second-answer_team-img-wrapper">
@@ -1312,198 +1302,295 @@
                     </figure>
                   </div>
                 </div>
-                
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- <section class="qa-dialog-common-issues">
-        <ul class="qa-dialog-common-issues__list">
-          <li class="qa-dialog-common-issues__item">
-            <p class="qa-dialog-common-issues__question">
-              На какие еще вопросы нужно <span class="text-selection">знать ответы?</span>
-            </p>
-            <img class='avatar' src="./img/userAvatar.png" alt="Аватар пользователя" />
-          </li>
-          <li class="qa-dialog-common-issues__item">
-            <img class='avatar' src="./img/ownerAvatarBlueBG.png" alt="Аватар основателя компании" />
-            <p class="qa-dialog-common-issues__first-answer">
-              На основные вопросы уже даны ответы выше. Давайте финально разберем самые основные!
-            </p>
-          </li>
-          <li class="qa-dialog-common-issues__item">
-            <img class='avatar' src="./img/ownerAvatarDarkBG.png" alt="Аватар основателя компании" />
-            <ul class="qa-dialog-common-issues__second-answer-list">
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-1">
-                    Вопрос 1
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Нужен ли стартовый капитал, чтобы начать зарабатывать в крипте?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Нет. Мы готовы инвестировать деньги, вам необходимо уделять только время
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-2">
-                    Вопрос 2
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Что нужно иметь для старта? Какая нужна техника?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет. Основная
-                  ваша деятельность заключается в работе с информацией в интернете, поэтому не
-                  обязательно покупать/иметь самый мощный компьютер на свете. Достаточно вашего
-                  домашнего компьютера
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-3">
-                    Вопрос 3
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Как можно стать частью сообщества?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Нажмите кнопку «Стать частью сообщества» на этой странице. После пройдите короткий
-                  опрос, и если вы успешно прошли его – следующим этапом будет прохождение
-                  верификации с одним из руководителей проекта. Верификация проходит в формате
-                  онлайн-встречи, обязательно включите видео
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-4">
-                    Вопрос 4
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Требуется ли специальное техническое или другое образование?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
-                  сотрудника.<br />
-                  И также качества характера – мы ценим и уважаем друг друга, и в команду
-                  принимаем<br />
-                  единомышленников. Ваше образование не имеет значения
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-5">
-                    Вопрос 5
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Когда получится заработать первые деньги?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
-                  на<br />
-                  начальном этапе. В среднем первые деньги вы начнете зарабатывать уже на 2,
-                  возможно, на<br />
-                  3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать уже после
-                  7-8<br />
-                  месяцев активной работы, когда накопите базу проектов
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-6">
-                    Вопрос 6
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Как можно быть уверенным, что заработанные вознаграждения не уйдут налево?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне). Это
-                  абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег можно
-                  проверить и увидеть,<br />
-                  сколько денег пришло, кому и куда они ушли далее
-                </p>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Ни один доллар не пройдет мимо участников нашего сообщества!
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="qa-dialog-common-issues__second-answer-wrapper">
-                  <p
-                    class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-7">
-                    Вопрос 7
-                  </p>
-                  <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
-                    Сколько можно зарабатывать с компанией 100 ФРАНКЛИНОВ?
-                  </p>
-                </div>
-                <p class="qa-dialog-common-issues__second-answer-solution">
-                  Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
-                  каждый<br />
-                  участник мог зарабатывать от $1’000 в месяц. И со своей стороны предоставим для
-                  этого все<br />
-                  возможности – инвестиции, экспертизу, обучение и поддержку
-                </p>
-              </li>
-              <li class="qa-dialog-common-issues__second-answer-item">
-                <div class="community-join-wrapper">
-                  <div class="community-join-button-wrapper">
-                    <button class="community-join-button">Стать частью сообщества</button>
+      <section class="qa-dialog-common-issues">
+        <div class="qa-dialog-common-issues__container">
+          <ul class="qa-dialog-common-issues__list">
+            <li class="qa-dialog-common-issues__item">
+              <p class="qa-dialog-common-issues__question">
+                На какие еще вопросы нужно <span class="text-selection">знать ответы?</span>
+              </p>
+              <img class="avatar" src="./img/userAvatar.png" alt="Аватар пользователя" />
+            </li>
+            <li class="qa-dialog-common-issues__item">
+              <img
+                class="avatar"
+                src="./img/ownerAvatarBlueBG.png"
+                alt="Аватар основателя компании" />
+              <p class="qa-dialog-common-issues__first-answer">
+                На основные вопросы уже даны ответы выше. Давайте финально разберем самые основные!
+              </p>
+            </li>
+            <li class="qa-dialog-common-issues__item">
+              <picture class="avatar">
+                <source media="(min-width: 590px)" srcset="./img/ownerAvatarDarkBG.png" />
+                <source media="(max-width: 591px)" srcset="./img/ownerAvatar.png" />
+                <img src="./img/ownerAvatarDarkBG.png" alt="" />
+              </picture>
+              <ul class="qa-dialog-common-issues__second-answer-list">
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-1">
+                      Вопрос 1
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-capital-desktop text-selection">
+                      Нужен ли стартовый капитал, чтобы начать зарабатывать в крипте?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-capital-mobile text-selection">
+                      Нужен ли стартовый капитал,<br />
+                      чтобы начать зарабатывать в крипте?
+                    </p>
                   </div>
-                  <div class="community-join-statistic-wrapper">
-                    <div class="community-join-statistic-container">
-                      <p class="community-join-statistic-text">
-                        Оставили заявку на подключение к сообществу:
-                      </p>
-                      <p class="community-join-statistic-counter">1891</p>
+                  <p class="qa-dialog-common-issues__second-answer-solution">
+                    Нет. Мы готовы инвестировать деньги, вам необходимо уделять только время
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-2">
+                      Вопрос 2
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-start-desktop text-selection">
+                      Что нужно иметь для старта? Какая нужна техника?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-start-mobile text-selection">
+                      Что нужно иметь для старта?<br />
+                      Какая нужна техника?
+                    </p>
+                  </div>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-start-desktop">
+                    Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
+                    Основная ваша деятельность заключается в работе с информацией в интернете,
+                    поэтому не обязательно покупать/иметь самый мощный компьютер на свете.
+                    Достаточно вашего домашнего компьютера
+                  </p>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-start-mobile">
+                    Из техники достаточно иметь компьютер/ноутбук, а также смартфон/планшет.
+                    Основная ваша деятельность заключается в работе с информацией<br />
+                    в интернете, поэтому не обязательно покупать/иметь самый мощный компьютер на
+                    свете. Достаточно вашего домашнего компьютера
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-3">
+                      Вопрос 3
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-part-desktop text-selection">
+                      Как можно стать частью сообщества?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-part-mobile text-selection">
+                      Как можно стать частью<br />
+                      сообщества?
+                    </p>
+                  </div>
+                  <p class="qa-dialog-common-issues__second-answer-solution">
+                    Нажмите кнопку «Стать частью сообщества» на этой странице. После пройдите
+                    короткий опрос, и если вы успешно прошли его – следующим этапом будет
+                    прохождение верификации с одним из руководителей проекта. Верификация проходит в
+                    формате онлайн-встречи, обязательно включите видео
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-4">
+                      Вопрос 4
+                    </p>
+                    <p class="qa-dialog-common-issues__second-answer-problem-text text-selection">
+                      Требуется ли специальное техническое или другое образование?
+                    </p>
+                  </div>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-education-desktop">
+                    Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
+                    сотрудника.<br />
+                    И также качества характера – мы ценим и уважаем друг друга, и в команду
+                    принимаем<br />
+                    единомышленников. Ваше образование не имеет значения
+                  </p>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-education-mobile">
+                    Нет. Важна компьютерная грамотность, она должна быть на уровне офисного
+                    сотрудника. И также качества характера – мы ценим и уважаем друг друга,<br />
+                    и в команду принимаем единомышленников. Ваше образование не имеет значения
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-5">
+                      Вопрос 5
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-earning-desktop text-selection">
+                      Когда получится заработать первые деньги?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-earning-mobile text-selection">
+                      Когда получится заработать<br />
+                      первые деньги?
+                    </p>
+                  </div>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-earning-desktop">
+                    Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
+                    на<br />
+                    начальном этапе. В среднем первые деньги вы начнете зарабатывать уже на 2,
+                    возможно, на<br />
+                    3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать уже после
+                    7-8<br />
+                    месяцев активной работы, когда накопите базу проектов
+                  </p>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-earning-mobile">
+                    Мы подчеркиваем, что наши активности не могут быть основным видом деятельности
+                    на начальном этапе.<br />
+                    В среднем первые деньги вы начнете зарабатывать уже на 2, возможно,<br />
+                    на 3 месяц. Ощутимое вознаграждение (от $500-700/мес.) можно получать уже после
+                    7-8 месяцев активной работы, когда накопите базу проектов
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-6">
+                      Вопрос 6
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text text-selection qa-dialog-common-issues__second-answer-problem-reward-desktop">
+                      Как можно быть уверенным, что заработанные вознаграждения не уйдут налево?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text text-selection qa-dialog-common-issues__second-answer-problem-reward-mobile">
+                      Как можно быть уверенным,<br />
+                      что заработанные вознаграждения<br />
+                      не уйдут налево?
+                    </p>
+                  </div>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-reward-desktop">
+                    Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне). Это
+                    абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег можно
+                    проверить и увидеть,<br />
+                    сколько денег пришло, кому и куда они ушли далее
+                  </p>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-reward-mobile">
+                    Все наши активности на крипторынке фиксируются в онлайн-реестре (блокчейне). Это
+                    абсолютно прозрачный реестр, где каждую транзакцию, любое движение денег можно
+                    проверить и увидеть, сколько денег пришло, кому и куда они ушли далее
+                  </p>
+                  <p class="qa-dialog-common-issues__second-answer-solution">
+                    Ни один доллар не пройдет мимо участников нашего сообщества!
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="qa-dialog-common-issues__second-answer-wrapper">
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem qa-dialog-common-issues__second-answer-problem_custom-size-7">
+                      Вопрос 7
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-profitability-desktop text-selection">
+                      Сколько можно зарабатывать с компанией 100 ФРАНКЛИНОВ?
+                    </p>
+                    <p
+                      class="qa-dialog-common-issues__second-answer-problem-text qa-dialog-common-issues__second-answer-problem-profitability-mobile text-selection">
+                      Сколько можно зарабатывать<br />
+                      с компанией 100 ФРАНКЛИНОВ?
+                    </p>
+                  </div>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-profitability-desktop">
+                    Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
+                    каждый<br />
+                    участник мог зарабатывать от $1’000 в месяц. И со своей стороны предоставим для
+                    этого все<br />
+                    возможности – инвестиции, экспертизу, обучение и поддержку
+                  </p>
+                  <p
+                    class="qa-dialog-common-issues__second-answer-solution qa-dialog-common-issues__second-answer-solution-profitability-mobile">
+                    Это полностью зависит от вас, вашей активности и дисциплины. Мы хотим, чтобы
+                    каждый участник мог зарабатывать от $1’000 в месяц.<br />
+                    И со своей стороны предоставим для этого все возможности – инвестиции,
+                    экспертизу, обучение и поддержку
+                  </p>
+                </li>
+                <li class="qa-dialog-common-issues__second-answer-item">
+                  <div class="community-join-wrapper">
+                    <div class="community-join-button-wrapper">
+                      <button class="community-join-button">Стать частью сообщества</button>
+                    </div>
+                    <div class="community-join-statistic-wrapper">
+                      <div class="community-join-statistic-container">
+                        <p class="community-join-statistic-text">
+                          Оставили заявку на подключение к сообществу:
+                        </p>
+                        <p class="community-join-statistic-counter">1891</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section> -->
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <!-- <footer class="footer">
-      <div class="header__logo-wrapper">
-        <img class="header__logo" src="img/logo.png" alt="логотип компании 100 Franklins" />
-        <p class="header__locale">РУ</p>
+    <footer class="footer">
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="img/logo.png" alt="логотип компании 100 Franklins" />
+        <p class="footer__locale">РУ</p>
       </div>
       <h1 class="footer__heading">Проект криптокомпании 100 FRANKLINS</h1>
       <div class="footer__heading_warnings-wrapper">
-        <div class="footer__warnings_exclamation">!</div>
-        <p class="footer__warnings">
-          Только для граждан 16+, у кого есть 2-3 часа в день
-          <span>и потребность в дополнительном заработке без вложений </span>
+        <p class="footer__warnings footer__warnings-desktop">
+          Только для граждан 16+, у кого есть 2-3 часа в день<br> 
+          и потребность в дополнительном заработке без вложений
+        </p>
+        <p class="footer__warnings footer__warnings-mobile">
+          Только для граждан 16+, у кого<br />
+          есть 2-3 часа в день
+          <span
+            >и потребность<br />
+            в дополнительном заработке без вложений
+          </span>
         </p>
       </div>
-      <div class="footer__subheading_wrapper">
-        <p class="footer__subheading indentation10">
-          Мы <span class="text-selection">бесплатно</span> вас научим вас
-        </p>
-        <p class="footer__subheading indentation10">
-          зарабатывать на крипте. <span class="text-selection">Поможем</span>
-        </p>
-        <p class="footer__subheading">
-          на каждом шаге. И даже
-          <span class="text-selection">вложим в вас деньги</span>
+      <p class="footer__subheading footer__subheading-desktop">
+        Мы <span class="text-selection">бесплатно</span> вас научим<br />
+        зарабатывать на крипте. <span class="text-selection">Поможем</span><br />
+        на каждом шаге. И даже <span class="text-selection">вложим в вас деньги</span>
+      </p>
+      <div class="footer__subheading-mobile-wrapper">
+        <p class="footer__subheading footer__subheading-mobile">
+          Мы <span class="text-selection">бесплатно</span><br />
+          вас научим<br />
+          зарабатывать на<br />
+          крипте. <span class="text-selection">Поможем</span><br />
+          на каждом шаге. И
+          <span class="text-selection"
+            >даже<br />
+            вложим в вас деньги</span
+          >
         </p>
       </div>
       <div class="footer__community-join-container">
@@ -1521,18 +1608,18 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-      const swiper = new Swiper('.swiper', {
+      const swiper = new Swiper('#swiper', {
         slidesPerView: 2,
         spaceBetween: 16,
         loop: true,
         autoplay: {
           delay: 3000,
-        }
+        },
       });
     </script>
   </body>

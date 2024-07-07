@@ -1,5 +1,5 @@
 .footer {
-  padding: 27px 0 75px 0;
+  padding: 27px 20px 75px 20px;
   background: url('../img/headerBackGround.jfif') no-repeat center center;
   background-size: cover;
   border-radius: 22.27px;
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 31px;
-  padding: 0 107px 0 110px;
+  padding: 0px 86px 0 90px;
 }
 
 .footer__logo {
@@ -47,7 +47,7 @@
   font-weight: 400;
   line-height: 18.2px;
   text-align: center;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .footer__heading_warnings-wrapper {
@@ -55,51 +55,29 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 63px;
-}
-
-.footer__warnings_exclamation {
-  width: 25px;
-  height: 28px;
-  position: relative;
-  top: -0.4px;
-  left: 0.4px;
-  padding: 0px 2px 1px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  clip-path: polygon(
-    0 0,
-    calc(100% - 8px) 0,
-    100% 5px,
-    100% calc(100% - 5px),
-    calc(100% - 8px) 100%,
-    0 100%
-  );
-  background-color: white;
-  color: #5d29f1;
-  font-family: Wadik;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 16.59px;
+  padding-left: 26px;
 }
 
 .footer__warnings {
-  padding: 9px 10px 10px 19px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 75%, 1% 68.5%, 1% 32%, 0 27.7%);
-  background-color: #5d29f1;
-  border-radius: 5px;
+  max-width: 491px;
+  position: relative;
+  padding: 9px 10px 10px 18px;
+  background: url('../img/headerWarningsBG.png') no-repeat;
+  background-size: 100% 100%;
   font-family: Geologica;
   font-size: 16px;
   font-weight: 300;
   line-height: 19.2px;
-  text-align: left;
 }
 
-.footer__subheading_wrapper {
-  margin-bottom: 56px;
+.footer__warnings::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -25px;
+  width: 25px;
+  height: 28px;
+  background: url('../img/exclamationMarkWarningDesktop.png') no-repeat;
 }
 
 .footer__subheading {
@@ -108,6 +86,10 @@
   font-weight: 700;
   line-height: 26.54px;
   text-align: center;
+}
+
+.footer__subheading-desktop {
+  margin-bottom: 55px;
 }
 
 .indentation10 {
@@ -121,3 +103,144 @@
   align-items: center;
   padding-right: 4px;
 }
+
+.footer__warnings-desktop,
+.footer__subheading-desktop {
+  display: block;
+}
+
+.footer__warnings-mobile,
+.footer__subheading-mobile {
+  display: none;
+}
+
+
+@media (max-width: 590px) {
+  .footer {
+    width: 100%;
+    padding: 107px 0 17px 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    bottom: -533px;
+    z-index: -1;
+  }
+
+  .footer__logo-wrapper {
+    padding: 0px 18px 0 24px;
+    margin-bottom: 60px;
+  }
+
+  .footer__logo {
+    width: 47px;
+    padding-top: 0;
+  }
+
+  .footer__locale {
+    padding: 4px 7px 3px 7px;
+    background-color: #2943de;
+    font-size: 12px;
+  }
+
+  .footer__heading {
+    padding-right: 41px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .footer__heading_warnings-wrapper {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer__warnings {
+    max-width: 332px;
+    padding: 9px 13px 12px 17px;
+    background: url('../img/headerWarningsMobileBG.png') no-repeat;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .footer__warnings::before {
+    top: 20px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+    background: url('../img/exclamationMarkWarningMobile.png') no-repeat;
+  }
+
+  .footer__warnings_mobile,
+  .footer__subheading-mobile {
+    display: block;
+  }
+
+  .footer__warnings_desktop,
+  .footer__subheading-desktop {
+    display: none;
+  }
+
+  .footer__subheading-mobile-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-right: 6px;
+  }
+
+  .footer__subheading-mobile {
+    margin-bottom: 34px;
+    padding-top: 3px;
+    font-size: 18px;
+    line-height: 19.91px;
+  }
+
+  .footer__dialog_wrapper  {
+    gap: 15px;
+    padding: 0px 20px 0 24px;
+  }
+
+  .footer__dialog_avatar {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer__dialog_question-text {
+    padding: 13px 25px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+  }
+
+  .footer__dialog_answer-text {
+    max-width: 227px;
+    padding: 13px 26px 12px 25px;
+    font-size: 13px;
+    line-height: 14.38px;
+
+  }
+
+  .footer__subheading-mobile {
+    text-align: start;
+  }
+
+  .footer__community-join-container {
+    padding-right: 79px
+  }
+
+  .footer__warnings-desktop,
+  .footer__subheading-desktop {
+    display: none;
+  }
+
+  .footer__warnings-mobile,
+  .footer__subheading-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .footer__dialog_container {
+    padding: 0;
+  }
+}
+

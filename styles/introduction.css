@@ -16,9 +16,9 @@
   top: 0;
   left: 0;
   content: '';
-  width: 41%;
+  width: 100%;
   height: 100%;
-  background: url('../img/backgroundLeftElipsis.png') no-repeat center center;
+  background: url('../img/backgroundLeftElipsis.png') no-repeat top left;
   z-index: -1;
   border-top-left-radius: 22.27px;
   border-bottom-left-radius: 22.27px;
@@ -29,9 +29,9 @@
   top: 0;
   right: 0;
   content: '';
-  width: 34%;
+  width: 100%;
   height: 100%;
-  background: url('../img/backgroundRightElipsis.png') no-repeat center center;
+  background: url('../img/backgroundRightElipsis.png') no-repeat top right;
   z-index: -1;
   border-top-right-radius: 22.27px;
   border-bottom-right-radius: 22.27px;
@@ -130,7 +130,7 @@
 
 @media (max-width: 1280px) {
   .introduction__container::before {
-    background: url('../img/questionsLeftElipsis.png') no-repeat center center;
+    background: url('../img/questionsLeftElipsis.png') no-repeat top left;
   }
 
   .introduction__container::after {
@@ -150,21 +150,13 @@
     padding-bottom: 357px;
   }
 
-  .introduction__container::before {
-    height: 90%;
-  }
-
-  .introduction__container::after {
-    height: 63%;
-  }
-
   .introduction__wrapper {
     flex-direction: column;
   }
 
   .introduction__dialog {
     padding-left: 0;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .introduction__dialog_text-wrapper {
@@ -202,20 +194,7 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .introduction__container::before {
-    height: 47%;
-  }
-}
-
 @media (max-width: 830px) {
-  .introduction__container::before {
-    height: 79%;
-  }
-
-  .introduction__container::after {
-    height: 56%;
-  }
 
   .introduction__dialog_text-wrapper {
     max-width: 450px;
@@ -249,14 +228,18 @@
 
   .introduction__container::before {
     background-image: url('../img/introductionLeftElipsisMobileBG.png');
-    height: 71%;
-    width: 58%;
+    background-position: top left;
     border-radius: 15px 0 0 0;
   }
 
   .introduction__container::after {
-    height: 71%;
-    width: 65%;
+    background-image: url('../img/introductionRightElipsisMobileBG.png');
+    background-size: 100% auto;
+    background-position: bottom right;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 15px 0;
   }
 
   .introduction__dialog {
@@ -276,7 +259,7 @@
   }
 
   .introduction__dialog {
-    padding: 35px 5px 0 9px;
+    padding: 35px 5px 0 12px;
     margin-bottom: 35px;
     gap: 4px;
   }
@@ -318,7 +301,7 @@
   }
 
   .introduction__info_owners-photo {
-    width: 359px;
+    width: 355px;
     height: 320px;
   }
 
@@ -342,11 +325,3 @@
   }
 }
 
-@media (max-width: 390px) {
-  .introduction__container::after {
-    background-image: url('../img/introductionRightElipsisMobileBG.png');
-    height: 122%;
-    width: 100%;
-    border-radius: 0 0 15px 0;
-  }
-}

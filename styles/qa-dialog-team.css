@@ -1,7 +1,8 @@
 .qa-dialog-team__container {
   margin-bottom: 25px;
   padding: 70px 105px 70px 113px;
-  background: url('../img/5thBlockBG.jfif') no-repeat center;
+  background: url('../img/5thBlockBG.jfif') no-repeat;
+  background-position: bottom;
   background-size: cover;
   border-radius: 25px;
 }
@@ -350,12 +351,12 @@
   }
 
   .qa-dialog-team__container {
-    padding: 35px 0 35px 0;
+    padding: 35px 0 11px 0;
     border-radius: 15px;
   }
 
   .qa-dialog-team__list {
-    padding: 0 8px 0 12px;
+    padding: 0 8px 0 6px;
   }
 
   .qa-dialog-team__first-question {
@@ -414,11 +415,21 @@
     margin-bottom: 22px;
   }
 
+  .qa-dialog-team__item:nth-child(2) {
+    padding-left: 6px;
+  }
+
   .qa-dialog-team__item:nth-child(4) {
+    gap: 10px;
     margin-bottom: 25px;
   }
 
   .qa-dialog-team__item:nth-child(5) {
+    margin-bottom: 24px;
+  }
+
+  .qa-dialog-team__item:nth-child(6) {
+    padding-left: 6px;
     margin-bottom: 24px;
   }
 

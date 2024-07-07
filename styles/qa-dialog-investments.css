@@ -1,5 +1,5 @@
 .qa-dialog-investments__container {
-  padding: 70px 108px 56px 113px;
+  padding: 70px 108px 55px 113px;
   margin-bottom: 25px;
   background: url('../img/5thBlockBG.jfif') no-repeat center center;
   background-size: cover;
@@ -36,7 +36,7 @@
 }
 
 .qa-dialog-investments__info-wrapper {
-  padding: 25px 35px 26px 35px;
+  padding: 25px 35px 27px 35px;
   border-radius: 19.65px 19px 19.65px 0.85px;
   background-color: #1c195b;
   font-family: Wadik;
@@ -186,7 +186,7 @@
 }
 
 .qa-dialog-investments__item_third-answer-list {
-  padding: 23px 0px 9px 77px;
+  padding: 23px 0px 13px 77px;
   background: url('../img/qaDialog1LastAnswerBG.png') no-repeat;
   background-size: 100% 100%;
   font-family: Geologica;
@@ -206,15 +206,19 @@
   position: absolute;
   background: url('../img/checkmarkSvg.svg') no-repeat;
   background-size: 100% 100%;
-  top: -1px;
+  top: -2px;
   left: -37px;
-  width: 22.76px;
-  height: 16.63px;
+  width: 25.76px;
+  height: 18.63px;
+}
+
+.qa-dialog-investments__item_third-answer-item:nth-of-type(3)::before {
+  top: 0;
 }
 
 .qa-dialog-investments__item_third-answer-text:nth-of-type(1),
 .qa-dialog-investments__item_third-answer-text:nth-of-type(3) {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .qa-dialog-investments__item_third-answer-text-desktop {
@@ -241,7 +245,7 @@
   }
 
   .qa-dialog-investments__item_third-answer-list {
-    padding: 21px 15px 9px 61px;
+    padding: 21px 15px 7px 61px;
   }
 
   .qa-dialog-investments__item_second-question {
@@ -291,7 +295,7 @@
 
   .qa-dialog-investments__container {
     border-radius: 15px;
-    padding: 35px 7px 33px 6px;
+    padding: 35px 7px 35px 6px;
   }
 
   .qa-dialog-investments__info-text {
@@ -435,6 +439,10 @@
     left: -22px;
   }
 
+  .qa-dialog-investments__item_third-answer-item:nth-of-type(3)::before {
+    top: 5px;
+  }
+
   .qa-dialog-investments__item_third-answer-text-desktop {
     display: none;
   }
@@ -448,8 +456,8 @@
     margin-bottom: 4px;
   }
 
-  .qa-dialog-investments__item:last-of-type {
+  /* .qa-dialog-investments__item:last-of-type {
     padding-left: 6px;
     gap: 4px;
-  }
+  } */
 }
