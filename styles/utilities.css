@@ -79,6 +79,11 @@
   line-height: 19.91px;
 }
 
+.avatar {
+  width: 46px;
+  height: 46px;
+}
+
 @media (max-width: 860px) {
   .community-join-statistic-container__qa-dialog-acknowledge {
     gap: 20px;

@@ -214,6 +214,7 @@
   }
 
   .qa-dialog-income__first-answer-wrapper {
+    max-width: 315px;
     padding: 15px 12px 14px 25px;
     font-size: 14px;
     line-height: 18.2px;
@@ -275,6 +276,7 @@
   }
 
   .qa-dialog-income__second-answer-wrapper {
+    max-width: 315px;
     padding: 15px 35px 14px 25px;
     font-size: 14px;
     line-height: 18.2px;
