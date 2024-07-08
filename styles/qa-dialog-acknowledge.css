@@ -1,6 +1,6 @@
 .qa-dialog-acknowledge__container {
   margin-bottom: 25px;
-  padding: 70px 105px 70px 113px;
+  padding: 70px 0 70px 113px;
   background: url('../img/5thBlockBG.jfif') no-repeat center;
   background-size: cover;
   border-radius: 25px;
@@ -15,6 +15,7 @@
 .qa-dialog-acknowledge__item:nth-child(1) {
   justify-content: flex-end;
   margin-bottom: 24px;
+  padding-right: 105px;
 }
 
 .qa-dialog-acknowledge__item:nth-child(2) {
@@ -24,6 +25,7 @@
 .qa-dialog-acknowledge__item:nth-child(3) {
   justify-content: flex-end;
   margin-bottom: 24px;
+  padding-right: 105px;
 }
 
 .qa-dialog-acknowledge__first-question {
@@ -291,12 +293,9 @@
   margin-right: 14px;
 }
 
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(1)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after,
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(5)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after,
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(6)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+.qa-dialog-acknowledge__second-answer_team-kir::after,
+.qa-dialog-acknowledge__second-answer_team-vladimir::after,
+.qa-dialog-acknowledge__second-answer_team-valeriy::after {
   position: absolute;
   content: url('../img/acknowledgePictures/teamMemberFlagUkraine.svg');
   top: 8px;
@@ -305,8 +304,7 @@
   height: 26.6px;
 }
 
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(2)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+.qa-dialog-acknowledge__second-answer_team-igor::after {
   position: absolute;
   content: url('../img/acknowledgePictures/teamMemberFlagMoldova.svg');
   top: 8px;
@@ -315,8 +313,7 @@
   height: 26.6px;
 }
 
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(3)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+.qa-dialog-acknowledge__second-answer_team-ksander::after {
   position: absolute;
   content: url('../img/acknowledgePictures/teamMemberFlagBelarus.svg');
   top: 8px;
@@ -325,8 +322,7 @@
   height: 26.6px;
 }
 
-.qa-dialog-acknowledge__second-answer_team-figure:nth-of-type(4)
-  .qa-dialog-acknowledge__second-answer_team-img-wrapper::after {
+.qa-dialog-acknowledge__second-answer_team-alex::after {
   position: absolute;
   content: url('../img/acknowledgePictures/teamMemberFlagUSA.svg');
   top: 8px;
@@ -375,21 +371,43 @@
   display: none;
 }
 
-@media (max-width: 1420px) {
-  .qa-dialog-acknowledge__second-answer_experience {
-    justify-content: flex-start;
-    padding-left: 19%;
+@media (max-width: 1335px) {
+  .qa-dialog-acknowledge__container {
+    padding: 70px 0 70px 20px;
   }
 
-  .qa-dialog-acknowledge__second-answer_team {
-    justify-content: flex-start;
-    padding-left: 19%;
+  .qa-dialog-acknowledge__item:nth-child(1) {
+    padding-right: 25px;
+  }
+  
+  .qa-dialog-acknowledge__item:nth-child(3) {
+    padding-right: 25px;
   }
 }
+
+@media (max-width: 1230px) {
+  .qa-dialog-acknowledge__container {
+    padding: 70px 0 70px 20px;
+  }
+
+  .qa-dialog-acknowledge__second-answer-wrapper {
+    max-width: 686px;
+  }
+}
+
+
 
 @media (max-width: 1000px) {
   .qa-dialog-acknowledge__container {
     padding: 50px 40px;
+  }
+
+  .qa-dialog-acknowledge__item:nth-child(1) {
+    padding-right: 0;
+  }
+  
+  .qa-dialog-acknowledge__item:nth-child(3) {
+    padding-right: 0;
   }
 
   .qa-dialog-acknowledge__first-question,
@@ -474,6 +492,7 @@
   }
 
   .qa-dialog-acknowledge__first-answer-wrapper {
+    max-width: 315px;
     padding: 15px 19px 3px 25px;
   }
 

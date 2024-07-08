@@ -55,7 +55,7 @@
   height: 100%;
   border-radius: 10px;
   background: url('../img/cardBorder.png') no-repeat;
-  background-size: 100% 240px;
+  background-size: 100% 100%;
   z-index: 5;
 }
 
