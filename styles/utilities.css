@@ -79,9 +79,15 @@
   line-height: 19.91px;
 }
 
-.avatar {
+.avatar,
+.owner-avatar {
+  display: block;
   width: 46px;
   height: 46px;
+}
+
+.owner-avatar-mobile {
+  display: none;
 }
 
 @media (max-width: 860px) {
@@ -91,14 +97,20 @@
 }
 
 @media (max-width: 590px) {
-  .avatar {
+  .owner-avatar {
+    display: none;
+  }
+
+  .avatar,
+  .owner-avatar-mobile {
+    display: block;
     width: 38px;
     height: 38px;
   }
 
   .community-join-wrapper {
     margin-bottom: 9px;
-}
+  }
 
   .community-join-button-wrapper {
     margin-bottom: 13px;
