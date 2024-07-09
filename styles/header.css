@@ -19,7 +19,7 @@
   padding-top: 7.5px;
 }
 
-.header__locale {
+/* .header__locale {
   padding: 4px 7px;
   align-self: flex-start;
   display: flex;
@@ -40,7 +40,7 @@
   border-right: 4px solid transparent;
   border-top: 4px solid white;
   margin-left: 4px;
-}
+} */
 
 .header__heading {
   font-family: Bicubik;
@@ -162,7 +162,7 @@
 
   .header__logo-wrapper {
     padding: 0px 18px 0 24px;
-    margin-bottom: 82px;
+    margin-bottom: 86px;
   }
 
   .header__logo {
@@ -170,11 +170,11 @@
     padding-top: 0;
   }
 
-  .header__locale {
+  /* .header__locale {
     padding: 4px 7px 3px 7px;
     background-color: #2943de;
     font-size: 12px;
-  }
+  } */
 
   .header__heading {
     padding-right: 41px;
